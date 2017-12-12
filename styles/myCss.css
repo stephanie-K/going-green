@@ -1,12 +1,12 @@
-{
-
+html{
+    position: relative;
+    min-height: 100%;
 }
-
-
 body {
     color: #5a5a5a;
     font-weight: 400;
     font-size: 16px;
+    margin-bottom: 100px; /* size of the sticky footer */
 }
 
 body a {
@@ -14,6 +14,15 @@ body a {
     font-weight: 500;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 30px 100px;
+    background-color: #373737;
+    color: #ffffff
+}
 
 .banner {
 
@@ -23,16 +32,12 @@ body a {
     padding: 10px 20px;
 }
 
+/* images, logos and icons
+-------------------------------------------------- */
+
 .logo {
     max-height: 2em;
     padding-right: 2em;
-}
-
-
-footer {
-    padding: 40px 100px;
-    background-color: #373737;
-    color: #ffffff
 }
 
 .icon {
@@ -70,7 +75,7 @@ footer {
 
 /* Carousel base class */
 .carousel {
-    height: 500px;
+    height: 300px;
     /* margin-bottom: 60px; */
 }
 /* Since positioning the image, we need to help out the caption */
@@ -80,7 +85,7 @@ footer {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 500px;
+    height: 300px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -90,7 +95,7 @@ footer {
     margin : auto;
     min-height: 100%;
     max-width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 
@@ -107,11 +112,11 @@ footer {
     font-weight: 400;
     line-height: 1;
     letter-spacing: -1px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .featurette-round {
-    margin: 60px 20px;
+    margin: 40px 20px;
     border-radius: 50%;
 }
 
@@ -149,29 +154,28 @@ footer {
 /* /////////////////////////////////  LAYOUT   /////////////////////////////////// */
 
 .margin-bottom-1 {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
 .margin-bottom-2 {
-    margin-bottom: 2em;
+    margin-bottom: 20px;
 }
 .margin-bottom-3 {
-    margin-bottom: 3em;
+    margin-bottom: 30px;
 }
 
 .margin-top-1 {
-    margin-top: 1em;
+    margin-top: 10px;
 }
 
 .margin-top-2 {
-    margin-top: 2em;
+    margin-top: 20px;
 }
 .margin-top-3 {
-    margin-top: 3em;
+    margin-top: 30px;
 }
 
 .big-section{
-    /* height: 400px;  */
     padding: 50px 100px;
 }
 
@@ -193,26 +197,26 @@ footer {
 
 @media (min-width: 993px) {
     .featurette-heading {
-        margin-top: 120px;
+        margin-top: 80px;
     }
     .featurette-image {
-        margin-top: 120px;
+        margin-top: 80px;
     }
     .featurette-round {
-        margin: 60px 20px;
+        margin: 40px 20px;
         border-radius: 50%;
     }
 }
 
 @media (max-width: 992px) {  /* smaller height for carousel, less padding and margin for featurette v*/
     .carousel {
-        height: 300px;
+        height: 200px;
     }
     .carousel .item {
-        height: 300px;
+        height: 200px;
     }
     .carousel-inner > .item > img {
-        height: 300px;
+        height: 200px;
     }
     .featurette {
         padding: 0px 50px 40px 50px;
@@ -226,8 +230,12 @@ footer {
     .featurette-round {
         margin: 60px 10px;
     }
+    body {
+        margin-bottom: 250px; /* size of the sticky footer */
+    }
     footer {
         font-size: 10px;
+        height: 250px;
     }
     .big-section{
         /* height: 300px; */
