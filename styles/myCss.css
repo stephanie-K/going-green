@@ -239,6 +239,7 @@ footer {
     footer {
         font-size: 14px;
         height: 250px;
+        padding: 30px 30px;
     }
     .big-section{
         /* height: 300px; */
