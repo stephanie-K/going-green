@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 100px; /* size of the sticky footer */
+    /* padding-top: 100px; for the nav bar */
 }
 
 body a {
@@ -23,7 +24,20 @@ footer {
     background-color: #373737;
     color: #ffffff
 }
+/*
+.navbar a {
+    color: #ffffff;
+}
 
+.navbar-white {
+    color: #ffffff;
+}
+.navbar-default {
+    color: #ffffff;
+}
+.navbar-brand {
+    color: #ffffff;
+} */
 .banner {
 
     background-color: #4f8f00 ; /* bootstrap button green #5cb85c  not as warm */
