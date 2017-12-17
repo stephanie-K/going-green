@@ -7,7 +7,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 100px; /* size of the sticky footer */
-    /* padding-top: 100px; for the nav bar */
+     padding-top: 60px; /* for the nav bar which is 50px high by default */
 }
 
 body a {
@@ -24,22 +24,53 @@ footer {
     background-color: #373737;
     color: #ffffff
 }
-/*
-.navbar a {
+
+/* NAV BAR
+                https://getbootstrap.com/docs/3.3/components/#navbar
+                https://getbootstrap.com/docs/3.3/examples/navbar-fixed-top/
+
+-------------------------------------------------- */
+/* ne marche pas.....
+
+.navbar-header a {
+    color: #ffffff;
+}
+ .navbar-brand a {
     color: #ffffff;
 }
 
-.navbar-white {
-    color: #ffffff;
-}
-.navbar-default {
-    color: #ffffff;
-}
-.navbar-brand {
-    color: #ffffff;
+.icon-bar {
+    background-color: #ffffff ;
 } */
-.banner {
+nav {
+    height: 60px;
+}
 
+#navbar li a{
+    color: #ffffff;
+    padding: 20px 25px;
+}
+
+#navbar li a{
+    color: #ffffff;
+    padding: 20px 25px;
+}
+
+#navbar li.active a{
+background-color: #ffffff;
+    color: #4f8f00;
+}
+
+#brand a{
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 20px;
+}
+#burger {
+    background-color: #ffffff ;
+}
+
+.banner {
     background-color: #4f8f00 ; /* bootstrap button green #5cb85c  not as warm */
     color: #ffffff;
     text-align: center;
@@ -50,8 +81,8 @@ footer {
 -------------------------------------------------- */
 
 .logo {
-    max-height: 2em;
-    padding-right: 2em;
+    max-height: 40px;
+    /* padding-right: 25px; */
 }
 
 .icon {
@@ -146,12 +177,13 @@ footer {
     background-color: #4f8f00 ;
     color: #ffffff;
 }
+/* remplacé par success
 .green-btn {
     background-color: #4f8f00 ;
     color: #ffffff;
     font-weight: 400;
 }
-
+*/
 .white-btn {
     background-color: #ffffff;
     color: #4f8f00 ;
