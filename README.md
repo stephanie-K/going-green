@@ -1,4 +1,5 @@
-# going-green
+
+# Going green
 This is a personal project. 
 I'm designing an application to help exploring various possibilities when you are planning green changes in your house or garden.
 This is to get a better idea of what to expect, and decide if these changes are worth doing without checking various sources of information, as it would all be in one place.
@@ -15,7 +16,7 @@ This is to get a better idea of what to expect, and decide if these changes are 
 ---
 
 ## Technical aspects
-I'm using Bootstrap and a mobile first design approach.
+I'm using [**Bootstrap**](https://getbootstrap.com/docs/3.3/getting-started/) and a mobile first design approach.
 
 
 The various components will be adapted so they look as good as possible on various screens sizes.
@@ -29,4 +30,7 @@ This will be a [Progressive Wep App](https://developers.google.com/web/progressi
 - Engaging - Feel like a natural app on the device, with an immersive user experience
 
 
-This is using Node.js, EJS, Sails, SASS, LESS, 
+This is using [Node.js](https://nodejs.org/en/), [EJS](http://www.ejs.co/), [Sails](https://sailsjs.com/get-started), [SASS](https://github.com/twbs/bootstrap-sass#d-npm--nodejs), [LESS](https://getbootstrap.com/2.0.4/less.html).
+
+
+
