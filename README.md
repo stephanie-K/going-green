@@ -14,7 +14,7 @@ This is to get a better idea of what to expect, and decide if these changes are 
 
 ---
 
-##Technical aspects
+## Technical aspects
 I'm using Bootstrap and a mobile first design approach.
 
 
@@ -27,5 +27,6 @@ This will be a [Progressive Wep App](https://developers.google.com/web/progressi
 - Reliable - Load instantly and never show the downasaur, even in uncertain network conditions
 - Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling
 - Engaging - Feel like a natural app on the device, with an immersive user experience
+
 
 This is using Node.js, EJS, Sails, SASS, LESS, 
