@@ -24,10 +24,15 @@ function design(req, res) {
   res.view('pages/design');
 }
 
+function empty(req, res) {
+  res.view('pages/empty_page');
+}
+
 
 module.exports = {
   index: index,
   aboutEN: aboutEN,
   aboutFR: aboutFR,
-  design: design
+  design: design,
+  empty: empty
 };

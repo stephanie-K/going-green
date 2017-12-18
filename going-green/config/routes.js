@@ -41,7 +41,8 @@ module.exports.routes = {
   'get /index': 'PagesController.index',
   'get /about_EN': 'PagesController.aboutEN',
   'get /about_FR': 'PagesController.aboutFR',
-  'get /design': 'PagesController.design'
+  'get /design': 'PagesController.design',
+  'get /empty_page': 'PagesController.empty'
 
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+    <title><%=typeof title == 'undefined' ? 'Going green' : title%></title>
     <!-- come form bootstrap -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,26 +11,31 @@
     <meta name="description" content="Planning Green Changes - the design">
     <link rel="icon" href="favicon.ico">
 
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <!--
-        Stylesheets and Preprocessors
-        ==============================
-
-        You can always bring in CSS files manually with `<link>` tags, or asynchronously
-        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
-        of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-        By default, stylesheets from your `assets/styles` folder are included
-        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
-        are supported. In production, your styles will be minified and concatenated into
-        a single file.
-
-        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-
-            + Change the order of your CSS files
-            + Import stylesheets from other directories
-            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
-    -->
+    Stylesheets and Preprocessors
+    ==============================
+    By default, stylesheets from your `assets/styles` folder are included
+    here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+    are supported. In production, your styles will be minified and concatenated into
+    a single file.
+    To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+    For example, here are a few things you could do:
+        + Change the order of your CSS files
+        + Import stylesheets from other directories
+        + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+--
 
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/importer.css">
@@ -41,14 +46,11 @@
   <body>
     <%- body %>
 
+    <%- include /partials/footer %>
 
     <!--
         Client-side Templates
         ========================
-
-        HTML templates are important prerequisites of modern, rich client applications.
-        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
-        that you load these templates client-side.
 
         By default, your Gruntfile is configured to automatically load and precompile
         client-side JST templates in your `assets/templates` folder, then
@@ -56,7 +58,6 @@
 
         To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
         For example, here are a few things you could do:
-
             + Import templates from other directories
             + Use a different template engine (handlebars, jade, dust, etc.)
             + Internationalize your client-side templates using a server-side
@@ -91,12 +92,19 @@
 
     -->
 
-
-
-
-
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

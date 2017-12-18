@@ -7,7 +7,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 100px; /* size of the sticky footer */
-     padding-top: 60px; /* for the nav bar which is 50px high by default */
+   /*  padding-top: 60px; for the nav bar which is 50px high by default */
+  background-image: url('../images/backgrounds/wood2bis600yel.png');
+}
+
+.lead {
+  font-weight: 400;
 }
 
 body a {
@@ -82,7 +87,7 @@ background-color: #ffffff;
 
 .logo {
     max-height: 40px;
-    /* padding-right: 25px; */
+    padding-right: 25px;
 }
 
 .icon {
@@ -176,6 +181,10 @@ background-color: #ffffff;
 .green-inverted {
     background-color: #4f8f00 ;
     color: #ffffff;
+}
+
+.green-inverted .lead{
+  font-weight: 300;
 }
 /* remplacé par success
 .green-btn {
