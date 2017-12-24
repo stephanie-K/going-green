@@ -46,19 +46,19 @@
 //@import 'styles.scss';
 $path: '/images/';
 
-// if I want sass code from bootstrap
-//@import 'bootstrap-custom';
-
-
 @import 'utils/helpers';
 
 @import 'base/settings';
 
-//@import 'components/nav-bar';
+@import 'components/navbar';
 @import 'components/footer';
 @import 'components/table';
+@import 'components/carrousel';
+@import 'components/featurettes';
 
 
 @import 'layout/image';
 @import 'layout/text';
+@import 'layout/general';
 
+@import 'themes/green-theme';

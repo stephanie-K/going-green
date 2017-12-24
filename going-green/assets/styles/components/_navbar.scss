@@ -1,0 +1,59 @@
+/* NAV BAR
+                https://getbootstrap.com/docs/3.3/components/#navbar
+                https://getbootstrap.com/docs/3.3/examples/navbar-fixed-top/
+
+-------------------------------------------------- */
+
+nav {
+    height: 60px;
+}
+
+
+#navbar li a{
+    color: #ffffff;
+    padding: 20px 25px;
+}
+
+#navbar li.active a{
+    background-color: #ffffff;
+    color: #4f8f00;
+}
+
+#brand a{
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#burger {
+    background-color: #ffffff ;
+}
+
+
+/* until I fix the navbar  */
+.banner {
+    background-color: #4f8f00 ; /* bootstrap button green #5cb85c  not as warm */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+
+  @media #{$mqSmallAndDown} {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* ne marche pas.....
+
+.navbar-header a {
+    color: #ffffff;
+}
+ .navbar-brand a {
+    color: #ffffff;
+}
+
+.icon-bar {
+    background-color: #ffffff ;
+} */

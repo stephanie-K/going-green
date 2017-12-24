@@ -1,0 +1,50 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+
+body {
+    color: #5a5a5a;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 100px; /* size of the sticky footer */
+    /*  padding-top: 60px; for the nav bar which is 50px high by default */
+    background-image: url('../../images/backgrounds/woodBG.png');
+
+    a {
+      color: #4f8f00;
+      font-weight: 500;
+    }
+
+    @media #{$mqMediumAndDown} {
+      margin-bottom: 250px; /* size of the sticky footer */
+    }
+}
+
+
+.lead {
+    font-weight: 400;
+}
+
+
+h1 {
+
+    @media #{$mqSmallAndDown} {
+      font-size: 24px;
+    }
+}
+
+
+.big-section {
+    padding: 50px 30px;
+
+
+    @media #{$mqMediumAndDown} {
+      /* height: 300px; */
+      padding: 50px;
+      font-size: 10px;
+    }
+}
+
+

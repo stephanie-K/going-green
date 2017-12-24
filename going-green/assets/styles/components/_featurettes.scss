@@ -1,0 +1,71 @@
+.featurette {
+    padding: 0px 100px 80px 100px;
+    margin: 0px; /* there must be some margin by default on the right of the featurette in boostrap ?*/
+
+    @media #{$mqMediumAndDown} {
+        padding: 0px 50px 40px 50px;
+    }
+
+    @media #{$mqSmallAndDown} {
+       padding: 0px 10px 10px 10px;
+    }
+}
+
+
+
+.featurette-image {
+
+    @media #{$mqLargeAndUp} {
+        margin-top: 80px;
+    }
+    @media #{$mqMediumAndDown} {
+        margin-top: 60px;
+    }
+}
+
+
+
+.featurette-heading {
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-top: 80px;
+
+    @media #{$mqMediumAndUp}  {
+        font-size: 30px;
+    }
+
+    @media #{$mqLargeAndUp} {
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    @media #{$mqMediumAndDown} {
+      margin-top: 60px;
+    }
+
+    @media #{$mqSmallAndDown} {
+      margin-top: 40px;
+      font-size: 20px;
+    }
+}
+
+
+
+.featurette-round {
+    margin: 60px 40px;
+    border-radius: 50%;
+
+    @media #{$mqLargeAndUp} {
+        margin: 40px 20px;
+        border-radius: 50%;
+      }
+
+    @media #{$mqMediumAndDown} {
+        margin: 60px 10px;
+      }
+}
+
+
+
+

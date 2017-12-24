@@ -1,0 +1,40 @@
+.green  {
+  color: #4f8f00;
+}
+
+
+.green-inverted {
+  background-color: #4f8f00 ;
+  color: #ffffff;
+}
+
+.green-inverted .lead{
+  font-weight: 300;
+}
+
+
+.white-btn {
+  background-color: #ffffff;
+  color: #4f8f00 ;
+  font-weight: 400;
+}
+
+.panel-green {
+  color :  #ffffff;
+  background-color: #4f8f00;
+  font-weight: 400;
+}
+
+.panel-border-green {
+  border-color: #4f8f00;
+}
+
+
+
+/* success button variable for green is now doing the same as below
+.green-btn {
+    background-color: #4f8f00 ;
+    color: #ffffff;
+    font-weight: 400;
+}
+*/

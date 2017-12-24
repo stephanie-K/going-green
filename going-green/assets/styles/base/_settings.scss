@@ -1,17 +1,39 @@
-/*  taken as is from cica online */
+/*  taken as is from cica online and changed to match less variables:
+ *
+ *   "@screen-xs": "480px",
+ *   "@screen-xs-min": "@screen-xs",
+ *   "@screen-phone": "@screen-xs-min",
+ *   "@screen-sm": "768px",
+ *   "@screen-sm-min": "@screen-sm",
+ *   "@screen-tablet": "@screen-sm-min",
+ *   "@screen-md": "992px",
+ *   "@screen-md-min": "@screen-md",
+ *   "@screen-desktop": "@screen-md-min",
+ *   "@screen-lg": "1200px",
+ *   "@screen-lg-min": "@screen-lg",
+ *   "@screen-lg-desktop": "@screen-lg-min",
+ *   "@screen-xs-max": "(@screen-sm-min - 1)",
+ *   "@screen-sm-max": "(@screen-md-min - 1)",
+ *   "@screen-md-max": "(@screen-lg-min - 1)",
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* MQ Screen Widths */
-$mediaQuerySmallMin: 1px;
-$mediaQuerySmallMax: 480px;
+
+
+$mediaQueryXSmallMin: 1px;
+$mediaQueryXSmallMax: 479px;
+
+$mediaQuerySmallMin: $mediaQueryXSmallMax + 1px;
+$mediaQuerySmallMax: 767px;
 
 $mediaQueryMediumMin: $mediaQuerySmallMax + 1px;
-$mediaQueryMediumMax: 768px;
+$mediaQueryMediumMax: 991px;
 
 $mediaQueryLargeMin: $mediaQueryMediumMax + 1px;
-$mediaQueryLargeMax: 1024px;
+$mediaQueryLargeMax: 1023px;
 
 $mediaQueryXLargeMin: $mediaQueryLargeMax + 1px;
-$mediaQueryXLargeMax: 1280px;
+$mediaQueryXLargeMax: 1199px;
 
 $mediaQueryXXLargeMin: $mediaQueryXLargeMax + 1px;
 $mediaQueryXXLargeMax: 9999px;
