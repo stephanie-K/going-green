@@ -1,0 +1,93 @@
+/*
+.table {
+    margin-bottom: 40px;
+
+    .table__cell--last {
+        @media #{$mqLargeAndUp} {
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+
+    .table__cell--last {
+        @media #{$mqPrint} {
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+    &.table--narrow {
+        @media #{$mqLargeAndUp} {
+            width: 50%;
+        }
+    }
+}
+.table--enquiry-review {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table--responsive {
+
+    .table__heading-row {
+
+        @media #{$mqMediumAndDown} {
+            @include visually-hidden;
+        }
+    }
+
+    .table__row {
+        @media #{$mqMediumAndDown} {
+            display: block;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bfc1c3;
+        }
+    }
+
+    .table__cell {
+        @media #{$mqMediumAndDown} {
+            display: table-row;
+            border-bottom: none;
+
+            &:before {
+                content: attr(data-column-heading);
+                display: table-cell;
+                vertical-align: middle;
+                padding: 5px 45px 5px 0;
+            }
+        }
+
+        .table__cell-content {
+            @media #{$mqMediumAndDown} {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 5px 0 5px 5px;
+            }
+        }
+    }
+}
+
+.table--sortable {
+
+    .table-sortable__arrows {
+        display: inline-block;
+        margin-left: 4px;
+    }
+    .table-sortable__arrow {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #000;
+        font-size: 13px;
+        font-size: 1.3rem;
+        padding: 1px;
+        margin: auto 1px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .table-sortable__arrow--active {
+        border-bottom-color: #000;
+    }
+}
+
+*/
