@@ -25,10 +25,36 @@
   font-weight: 400;
 }
 
+.panel-green-inverted {
+  color :  #4f8f00;
+  background-color: #ffffff;
+
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+
 .panel-border-green {
   border-color: #4f8f00;
 }
 
+
+.panel-border-green-medium {
+  border: 3px solid #4f8f00;
+  border-radius: 5px;
+}
+
+.panel-body-yellow {
+  background-color: #FEF3BE;
+  border-top: 3px solid #4f8f00;
+}
 
 
 /* success button variable for green is now doing the same as below
