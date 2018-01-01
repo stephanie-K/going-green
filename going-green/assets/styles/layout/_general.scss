@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     margin-bottom: 100px; /* size of the sticky footer */
     /*  padding-top: 60px; for the nav bar which is 50px high by default */
-    background-image: url('../../images/backgrounds/woodBG.png');
+    background-image: url('/images/backgrounds/woodBG.png'); // add to put that URL for it to work in production
 
     a {
       color: #4f8f00;
