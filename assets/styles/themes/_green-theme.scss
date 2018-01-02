@@ -34,9 +34,19 @@ body {
   a {
     color: $mycolour-base;
   }
-  a:hover {
-    color: $mycolour-light;
+
+  footer {
+      a:hover {
+        color: $mycolour-light;
+      }
   }
+
+  p {
+      a:hover {
+        color: $mycolour-light;
+      }
+  }
+
 }
 
 
@@ -66,6 +76,12 @@ body {
   font-weight: 400;
   border: 3px solid $mycolour-base;
 
+  .panel-title {
+      a:hover {
+        color: $white;
+      }
+  }
+
   .panel-body {
     color :  $text-color;
     background-color: $white;
@@ -78,7 +94,7 @@ body {
   border: 3px solid $mycolour-base;
 
   a:hover {
-    color: $mycolour-dark;
+    color: $mycolour-base;
   }
 
   .panel-body {

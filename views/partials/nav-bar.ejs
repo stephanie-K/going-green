@@ -1,49 +1,69 @@
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top green-inverted">
+
+<div class="my-navbar">
     <div class="container">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <div class="row">
+            <button type="button"> <!-- class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"-->
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar" id="burger"></span>
-                <span class="icon-bar" id="burger"></span>
-                <span class="icon-bar" id="burger"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <div class="row">
-                <div class="col-xs-2">
-                    <a class="navbar-brand" href="#"><img class="logo" src="favicon.ico" alt="logo of a hand holding a plant"></a>
-                </div>
-                <div class="col-xs-10" id="brand">
-                    <a class="navbar-brand" href="#">Planning green changes</a>
-                </div>
-            </div>
+            <a class="nav-brand" href="#"><img class="logo" src="favicon.ico" alt="logo of a hand holding a plant">Planning green changes</a>
+            <a href="#" class="active nav-menu">Home</a>
+            <a href="#" class="nav-menu">About</a>
+            <a href="#" class="nav-menu">Design</a>
+            <a href="#" class="nav-menu">Settings</a>
+            <a href="about_FR" class="nav-menu"><img class="icon-flag" src="images/flag-french.jpg">en français</a>
         </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Design</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Français</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header">Units</li>
-                        <li><a href="#">Metric</a></li>
-                        <li><a href="#">Imperial</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Colour themes</li>
-                        <li><a href="#">Green</a></li>
-                        <li><a href="#">No Fuss</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
     </div>
-</nav>
+</div>
+
+<!-- Fixed navbar
+<nav class="navbar navbar-default navbar-fixed-top theme-color-inverted">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" id="burger"></span>
+        <span class="icon-bar" id="burger"></span>
+        <span class="icon-bar" id="burger"></span>
+      </button>
+      <div class="row">
+        <div class="col-xs-2">
+          <a class="navbar-brand" href="#"><img class="logo" src="favicon.ico" alt="logo of a hand holding a plant"></a>
+        </div>
+        <div class="col-xs-10" id="brand">
+          <a class="navbar-brand" href="#">Planning green changes</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Design</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Français</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Units</li>
+            <li><a href="#">Metric</a></li>
+            <li><a href="#">Imperial</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Colour themes</li>
+            <li><a href="#">Green</a></li>
+            <li><a href="#">No Fuss</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse
+  </div>
+</nav-->

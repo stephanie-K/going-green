@@ -45,6 +45,7 @@
 
 //@import 'styles.scss';
 $path: '/images/';
+@import 'themes/green-theme';
 
 @import 'utils/helpers';
 
@@ -62,4 +63,4 @@ $path: '/images/';
 @import 'layout/text';
 @import 'layout/general';
 
-@import 'themes/green-theme';
+
