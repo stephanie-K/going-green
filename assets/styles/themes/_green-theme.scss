@@ -1,66 +1,110 @@
-.green  {
-  color: #4f8f00;
+/*   ------------------------------  colour theme green ---------------------------- */
+
+$mycolour-base: #4f8f00;
+$mycolour-secondary: #FEF3BE; // yellowish
+$mycolour-light: lighten($mycolour-base, 10%);
+$mycolour-dark: darken($mycolour-base, 10%);
+$white : #fff;
+$text-color : #5a5a5a ; // dark grey
+$text-color-inverted: $white;
+//$link-color: $mycolour-base;
+//$link-hover-color: darken($link-color, 15%);
+//$link-color-inverted: #333;
+//$link-hover-color-inverted: darken($link-color-inverted, 15%);
+
+
+
+.theme-color  {
+  color: $mycolour-base;
 }
 
+.theme-color-inverted {
+  background-color: $mycolour-base;
+  color:$white;
 
-.green-inverted {
-  background-color: #4f8f00 ;
-  color: #ffffff;
-}
-
-.green-inverted .lead{
-  font-weight: 300;
-}
-
-
-.white-btn {
-  background-color: #ffffff;
-  color: #4f8f00 ;
-  font-weight: 400;
-}
-
-.panel-green {
-  color :  #ffffff;
-  background-color: #4f8f00;
-  font-weight: 400;
-}
-
-.panel-green-inverted {
-  color :  #4f8f00;
-  background-color: #ffffff;
-
-  h2 {
-    font-weight: 400;
-    font-size: 30px;
+  .lead {
+    font-weight: 300;
   }
+}
+
+body {
+  color: $text-color;
+  background-image: url('/images/backgrounds/woodBG.png'); // add to put that URL for it to work in production
 
   a {
-    text-decoration: none;
+    color: $mycolour-base;
+  }
+  a:hover {
+    color: $mycolour-light;
   }
 }
 
 
+// I'm using button success as normal button - the green has been changed but will need to create a class is other themes
 
-.panel-border-green {
-  border-color: #4f8f00;
+.button-primary {
+  background-color: $mycolour-base ;
+  color: $white ;
+  font-weight: 400;
+
+  //a:hover, a:focus {
+  //  color: #ddd;
+  //
+  //}
+}
+
+.button-inverted {
+  background-color: $white;
+  color: $mycolour-base ;
+  font-weight: 400;
 }
 
 
-.panel-border-green-medium {
-  border: 3px solid #4f8f00;
-  border-radius: 5px;
+.panel-theme-color {
+  color : $white;
+  background-color: $mycolour-base;
+  font-weight: 400;
+  border: 3px solid $mycolour-base;
+
+  .panel-body {
+    color :  $text-color;
+    background-color: $white;
+  }
 }
 
-.panel-body-yellow {
-  background-color: #FEF3BE;
-  border-top: 3px solid #4f8f00;
+.panel-theme-color-inverted {
+  color :  $mycolour-base;
+  background-color: $white;
+  border: 3px solid $mycolour-base;
+
+  a:hover {
+    color: $mycolour-dark;
+  }
+
+  .panel-body {
+    background-color: $mycolour-secondary;
+    border-top: 3px solid $mycolour-base;
+    color :  $text-color;
+
+    a:hover {
+      color: $white;
+    }
+  }
+
+  .dropdown-medium {
+    li a:hover {
+      color: $mycolour-base;
+      font-weight: 500;
+    }
+  }
+
 }
 
 
-/* success button variable for green is now doing the same as below
-.green-btn {
-    background-color: #4f8f00 ;
-    color: #ffffff;
-    font-weight: 400;
-}
-*/
+
+
+
+
+
+
+
