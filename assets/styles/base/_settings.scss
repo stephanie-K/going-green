@@ -40,6 +40,10 @@ $mediaQueryXXLargeMax: 9999px;
 
 /* Media Queries */
 // http://www.paulund.co.uk/ios-media-queries-boilerplate
+$mqXSmallAndUp: 'only screen';
+$mqXSmallAndDown: 'only screen and (max-width: #{$mediaQueryXSmallMax})';
+$mqXSmallOnly: 'only screen and (min-width: #{$mediaQueryXSmallMin}) and (max-width: #{$mediaQueryXSmallMax})';
+
 $mqSmallAndUp: 'only screen';
 $mqSmallAndDown: 'only screen and (max-width: #{$mediaQuerySmallMax})';
 $mqSmallOnly: 'only screen and (min-width: #{$mediaQuerySmallMin}) and (max-width: #{$mediaQuerySmallMax})';
