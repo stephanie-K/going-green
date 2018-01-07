@@ -35,6 +35,9 @@ function empty(req, res) {
   res.view('pages/empty_page');
 }
 
+function settings(req, res) {
+  res.view('pages/settings');
+}
 
 
 
@@ -46,5 +49,6 @@ module.exports = {
   aboutEN: aboutEN,
   aboutFR: aboutFR,
   design: design,
-  empty: empty
+  empty: empty,
+  settings: settings
 };
