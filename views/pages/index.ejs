@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-          <h1 class="margin-3 text-center">Home <small><em> (under construction)</em></small></h1>
+          <h1 class="margin-3 text-center">Home <span class="label label-danger to-right">Under construction</span></h1>
         </div>
     </div>
 
@@ -30,19 +30,20 @@
 
                           <form class="form-inline">
                             <div class="form-group">
-                                <label for="number-of-hens">Number of hens: </label>
-                                <a class="btn btn-default btn-md" href="#" role="button">
-                                  <span class="glyphicon glyphicon-minus"></span>
-                                </a>
-                                <input type="number" class="form-control" name="number-of-hens" id="number-of-hens" placeholder="0">
-                                <a class="btn btn-default btn-md" href="#" role="button">
-                                  <span class="glyphicon glyphicon-plus"></span>
-                                </a>
-                                <a class="btn btn-danger btn-md" href="#" role="button">
-                                  RESET
-                                </a>
+                              <label for="number-of-hens">Number of hens: </label>
+                              <div class="input-group">
+                                  <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default" aria-label="minus one" role="button"><span class="glyphicon glyphicon-minus"></span></button>
+                                  </div>
+                                  <input type="number" class="form-control small-width" name="number-of-hens" id="number-of-hens" aria-label="number of hens" placeholder="0">
+                                  <div class="input-group-btn">
+                                      <button type="button" class="btn btn-default" aria-label="plus one" role="button"><span class="glyphicon glyphicon-plus"></span></button>
+                                      <button type="button" class="btn btn-danger" aria-label="reset" role="button">RESET</button>
+                                  </div>
+                              </div>
                             </div>
                           </form>
+
                         </div>
 
                         <div class="row col-xs-offset-1 margin-top-2">
@@ -100,24 +101,24 @@
             <div id="collapse2" class="panel-collapse collapse" aria-labelledby="heading2">
               <div class="panel-body">
                 <div class="row col-xs-offset-1">
-
-                    <div class="dropdown" style="">
-                      <button class="btn btn-default dropdown-toggle dropdown-medium" type="button" id="dropdownSolar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Select a location
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu dropdown-medium" aria-labelledby="dropdownSolar">
-                        <li><a href="#">England</a></li>
-                        <li><a href="#">Northern Ireland</a></li>
-                        <li><a href="#">Scotland</a></li>
-                        <li><a href="#">Wales</a></li>
-                      </ul>
+                    <div class="row margin-bottom-2">
+                        <h3><span class="label label-success ">Coming soon</span></h3>
                     </div>
-
-
+                    <div class="row">
+                        <div class="dropdown" style="">
+                          <button class="btn btn-default dropdown-toggle dropdown-medium" type="button" id="dropdownSolar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Select a location
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-medium" aria-labelledby="dropdownSolar">
+                            <li><a href="#">England</a></li>
+                            <li><a href="#">Northern Ireland</a></li>
+                            <li><a href="#">Scotland</a></li>
+                            <li><a href="#">Wales</a></li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -145,13 +146,16 @@
                   <form class="form-inline">
                     <div class="form-group">
                       <label for="number-of-person">Number of person in the household: </label>
-                      <a class="btn btn-default btn-md" href="#" role="button">
-                        <span class="glyphicon glyphicon-minus"></span>
-                      </a>
-                      <input type="number" class="form-control" name="number-of-hens" id="number-of-person" placeholder="1">
-                      <a class="btn btn-default btn-md" href="#" role="button">
-                        <span class="glyphicon glyphicon-plus"></span>
-                      </a>
+                      <div class="input-group">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" aria-label="minus one" role="button"><span class="glyphicon glyphicon-minus"></span></button>
+                        </div>
+                        <input type="number" class="form-control small-width" name="number-of-hens" id="number-of-person"  aria-label="number of person" placeholder="1">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default" aria-label="plus one" role="button"><span class="glyphicon glyphicon-plus"></span></button>
+                          <button type="button" class="btn btn-danger" aria-label="reset" role="button">RESET</button>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -192,7 +196,14 @@
 
             <div id="collapse4" class="panel-collapse collapse" aria-labelledby="heading4">
               <div class="panel-body">
-                <p>for grow your own here</p>
+                <div class="row col-xs-offset-1">
+                  <div class="row margin-bottom-2">
+                    <h3><span class="label label-success ">Coming soon</span></h3>
+                  </div>
+                  <div class="row">
+                    <p>Various starter crops with advices</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +222,14 @@
 
             <div id="collapse5" class="panel-collapse collapse" aria-labelledby="heading5">
               <div class="panel-body">
-                <p>for email the results here</p>
+                <div class="row col-xs-offset-1">
+                  <div class="row margin-bottom-2">
+                    <h3><span class="label label-success ">Coming soon</span></h3>
+                  </div>
+                  <div class="row">
+                    <p>To chose to receive an email with all the results from the various selections done on this page</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
