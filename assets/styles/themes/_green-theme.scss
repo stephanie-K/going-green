@@ -36,8 +36,13 @@ body {
   }
 
   footer {
-      a:hover {
-        color: $mycolour-light;
+      a {
+        color: $white;
+      }
+      p{
+        a:hover {
+          color: $white;
+        }
       }
   }
 

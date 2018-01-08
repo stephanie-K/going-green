@@ -6,18 +6,6 @@
 
 ----------------------------------------------------------- */
 
-/* until I fix the navbar  */
-.banner {
-    background-color: #4f8f00 ; /* bootstrap button green #5cb85c  not as warm */
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 20px;
-
-  @media #{$mqSmallAndDown} {
-      font-size: 14px;
-  }
-}
-
 
 .my-navbar {
     position: fixed;
@@ -28,6 +16,7 @@
     z-index: 16; /* to bring navbar to front. 1 was enough but for the carousel indicators (the 4 dots) */
     color: #fff;
     background-color: #4f8f00 ;
+    border-bottom: 1px solid #fff;
     //overflow: hidden;
 
     a {
@@ -38,14 +27,14 @@
         text-decoration: none;
     }
     a.nav-menu:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: #fff;
+      color: #4f8f00 ;
     }
 
-    a.nav-current {
-      background-color: #fff;
-      color:#4f8f00 ;
-    }
+    //a.nav-current {
+    //  background-color: #fff;
+    //  color:#4f8f00 ;
+    //}
 
     .nav-brand {
         //max-width: 40%;
@@ -107,21 +96,34 @@
       display: block;
       text-align: left;
       color: #fff;
-      background-color: #373737; // footer background
-      border-top: 1px solid #4f8f00;
+      background-color: #4f8f00 ; // footer background
+      border-bottom: 1px solid #fff;
     }
 
     a.nav-menu:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: #fff;
+      color: #4f8f00;
     }
 
-    a.nav-current {
-      background-color: #fff;
-      color:#4f8f00 ;
-    }
+    //a.nav-current {
+    //  background-color: #fff;
+    //  color:#4f8f00 ;
+    //}
   }
 
 }
 
 
+
+/* until I fix the navbar
+.banner {
+  background-color: #4f8f00 ;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+
+  @media #{$mqSmallAndDown} {
+    font-size: 14px;
+  }
+}
+*/
