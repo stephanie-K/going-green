@@ -21,10 +21,15 @@
 
       <div id="navbar" class="navbar-collapse collapse">
           <a href="index" class="nav-menu"><%= __('Home') %></a>
-          <a href="About_EN" class="nav-menu"><%= __('About') %></a>
+          <a href="about_EN" class="nav-menu"><%= __('About') %></a>     <!-- about generic -->
           <a href="design" class="nav-menu"><%= __('Design') %></a>
           <a href="settings" class="nav-menu"><%= __('Settings') %></a>
-          <a href="about_FR" class="nav-menu"><img class="icon-flag" src="images/flag-french.jpg">français</a>
+          <a href="about_FR" class="nav-menu">                           <!-- changeLanguage -->
+              <% if (selectedLanguage === 'en') { %>
+                  <img class="icon-flag" src="images/flag-french.jpg">français</a>
+                  <% } else { %>
+                  <img class="icon-flag" src="images/flag-english.jpg">English</a>
+                  <% } %>
       </div>
 
     </div>

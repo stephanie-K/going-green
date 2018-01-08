@@ -43,7 +43,10 @@ module.exports.routes = {
   'get /about_FR': 'PagesController.aboutFR',
   'get /design': 'PagesController.design',
   'get /empty_page': 'PagesController.empty',
-  'get /settings': 'PagesController.settings'
+  'get /settings': 'PagesController.settings',
+
+  'get /about': 'PageController.about',
+  'get /changeLanguage' : 'PageController.changeLanguage'
 
 
 
