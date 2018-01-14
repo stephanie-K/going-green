@@ -11,7 +11,7 @@ body {
     padding-top: 60px; /* for the fixed nav bar which is 60px high by default */
 
     a {
-      font-weight: 500;
+      //font-weight: 500;
     }
 
     @media #{$mqMediumAndDown} {
@@ -32,27 +32,22 @@ h1 {
 }
 
 
-.big-section {
-    padding: 50px 30px;
-
-    @media #{$mqMediumAndDown} {
-      /* height: 300px; */
-      padding: 50px;
-      font-size: 10px;
-    }
-}
-
 .dropdown-medium {
   font-size: 18px;
-}
-
-.to-center {
-  //display: block;
-  //margin-left: auto;
-  //margin-right: auto;
 }
 
 
 .to-right {
   float: right;
+}
+
+.clearfix::after { // to avoid element with to-right to overflow outside a container
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.input-group-addon,
+.input-group-btn { // to avoid group of button in index to break under 768px - comes from bootstrap default, put width to 1%
+  width: auto;
 }

@@ -14,7 +14,9 @@ const SPACE_FOR_RUNNING_METER = 1;
 const EGGS_PER_HEN = 300;
 const WATER_SAVED_PER_PERSON = 70;
 
+// default settings;
 var selectedLang = 'en';
+var selectedSystem = 'metric'
 
 function changeLanguage (req, res) {
   selectedLang = req.getLocale(); // swap language as only two for now
@@ -30,36 +32,36 @@ function changeLanguage (req, res) {
 
 
 function index(req, res) {
-  res.view('pages/index', {selectedLanguage: selectedLang});
+  res.view('pages/index', {selectedLang: selectedLang, selectedSystem: selectedSystem});
 }
 
 function about(req, res){
    if (selectedLang === 'en') {
-     res.redirect('/pages/about_EN'); //, {selectedLanguage: 'en'});
+     res.redirect('/pages/about_EN'); //, {selectedLang: 'en'});
     } else {
-     res.redirect('/pages/about_FR'); //, {selectedLanguage: 'fr'});
+     res.redirect('/pages/about_FR'); //, {selectedLang: 'fr'});
    }
 }
 
 function aboutEN(req, res){
-  res.view('pages/about_EN', {selectedLanguage: selectedLang});
+  res.view('pages/about_EN', {selectedLang: selectedLang});
 }
 
 function aboutFR(req, res) {
   req.setLocale('fr');
-  res.view('pages/about_FR', {selectedLanguage: 'fr'});
+  res.view('pages/about_FR', {selectedLang: 'fr'});
 }
 
 function design(req, res) {
-  res.view('pages/design', {selectedLanguage: selectedLang});
+  res.view('pages/design', {selectedLang: selectedLang});
 }
 
 function empty(req, res) {
-  res.view('pages/empty_page' ,{selectedLanguage: selectedLang});
+  res.view('pages/empty_page' ,{selectedLang: selectedLang});
 }
 
 function settings(req, res) {
-  res.view('pages/settings', {selectedLanguage: selectedLang});
+  res.view('pages/settings', {selectedLang: selectedLang});
 }
 
 
