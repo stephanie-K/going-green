@@ -45,11 +45,9 @@
 
 //@import 'styles.scss';
 $path: '/images/';
-@import 'themes/green-theme';
-
-@import 'utils/helpers';
-
 @import 'base/settings';
+@import 'themes/green-theme';
+@import 'utils/helpers';
 
 @import 'components/navbar';
 @import 'components/footer';
@@ -57,7 +55,6 @@ $path: '/images/';
 @import 'components/carrousel';
 @import 'components/featurettes';
 @import 'components/panel';
-
 
 @import 'layout/image';
 @import 'layout/text';

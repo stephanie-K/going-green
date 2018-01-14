@@ -51,7 +51,6 @@ body {
         color: $mycolour-light;
       }
   }
-
 }
 
 
@@ -75,6 +74,7 @@ body {
 }
 
 
+// ------------------------------------------------------------ for the panels
 .panel-theme-color {
   color : $white;
   background-color: $mycolour-base;
@@ -121,6 +121,46 @@ body {
 
 }
 
+// ------------------------------------------------------------ for the navbar
+.my-navbar {
+  color: $white;
+  background-color: $mycolour-base ;
+  border-bottom: 1px solid $white;
+
+  a {
+    color: $white;
+  }
+  a.nav-menu:hover {
+    background-color: $white;
+    color: $mycolour-base;
+  }
+
+  .nav-brand {
+    a:hover {
+      color: $white;
+      background-color: $mycolour-base ;
+    }
+  }
+}
+
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon.
+   This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media #{$mqMediumAndDown}  {
+
+  #navbar.responsive {
+    a {
+      color: $white;
+      background-color: $mycolour-base; // footer background
+      border-bottom: 1px solid $white;
+    }
+
+    a.nav-menu:hover {
+      background-color: $white;
+      color: $mycolour-base;
+    }
+  }
+}
 
 
 
