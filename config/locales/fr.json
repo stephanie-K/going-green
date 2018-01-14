@@ -12,5 +12,27 @@
   "Under construction": "En construction",
   "Coming soon": "Bientôt",
   "Menu": "Menu",
-  "The design process": "Le design"
+  "The design process": "Le design",
+  "Contact me": "me contacter",
+
+  "Number of hens:" : "nombre de poules :",
+  "Space to roam:" : "espace pour l'enclos : ",
+  "square meters" : "mètres carré",
+  "square feet" : "pieds carré",
+  "Space for the coop:" : "espace pour le poulailler :",
+  "Total space needed:" : "espace total nécessaire :",
+  "Number of eggs" : "nombre d'oeufs",
+  "per week" : "par semaine",
+  "Learn more": "En savoir plus",
+  "Select a location": "Choisir une région",
+  "England": "Angleterre",
+  "Scotland": "Écosse",
+  "Northern Ireland": "Irlande du nord",
+  "Wales" : "Pays de Galles",
+  "Thousands of litres of rain water can be collected per year, on an average roof in the UK." : "En moyenne, des milliers de litre d'eau de pluie peuvent être recueilli par an pour un toit de taille moyenne au Royaume Uni",
+  "RESET": "EFFACER",
+  "Number of person in the household:": "Nombre de personnes dans le foyer : ",
+  "litres of potable water per day could be saved by recycling grey water": "litres d'eau potable par jour pourraient être économisés en recyclant les eaux grises.",
+  "Various starter crops with advices": "Différentes p'antes et des conseils",
+  "To chose to receive an email with all the results from the various selections done on this page": "Pour recevoir un mail avec les résultats en fonction de vos sélections sur cette page"
 }
