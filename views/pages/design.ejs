@@ -1,7 +1,10 @@
 <% title = 'Design' %>
 <%- include ../partials/navbar %>
 
-
+<% if (selectedLang == 'fr') { %>
+<div class="alert alert-warning text-center" role="alert">Cette page n'est disponible qu'en anglais pour le moment.</div>
+<% } %>
+<p>selectedLang is: <%= selectedLang %></p>
 <div class="featurette">
     <div class="row">
         <div class="col-xs-12 clearfix">

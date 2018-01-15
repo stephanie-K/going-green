@@ -33,8 +33,8 @@ function changeLanguage (req, res) {
 
 function index(req, res) {
   req.setLocale('fr');
-  selectLang = req.getLocale();
-  res.view('pages/index', {selectedLang: selectLang , selectedSystem: selectedSystem});
+  selectedLang = req.getLocale();
+  res.view('pages/index', {selectedLang: selectedLang , selectedSystem: selectedSystem});
 }
 
 function about(req, res){
@@ -55,7 +55,9 @@ function aboutFR(req, res) {
 }
 
 function design(req, res) {
-  res.view('pages/design', {selectedLang: selectedLang});
+  req.setLocale('fr');
+  selectedLang = req.getLocale();
+  res.view('pages/design', {selectedLang:  selectedLang});
 }
 
 function empty(req, res) {

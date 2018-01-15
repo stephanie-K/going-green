@@ -1,6 +1,32 @@
-.small-width {
+.width-1 {
   max-width: 5em;
+  min-width: 5em;
 }
+
+.width-2 {
+  max-width: 10em;
+  min-width: 10em;
+}
+
+.width-3 {
+  max-width: 15em;
+  min-width: 15em;
+}
+
+.width-4 {
+  max-width: 20em;
+  min-width: 20em;
+}
+
+.dropdown-medium {
+  font-size: 18px;
+}
+
+.input-group-medium {
+  font-size: 18px;
+}
+
+
 
 .margin-bottom-1 {
   margin-bottom: 10px;
