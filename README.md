@@ -4,6 +4,23 @@ This is a personal project.
 I'm designing an application to help exploring various possibilities when you are planning green changes in your house or garden.
 This is to get a better idea of what to expect, and decide if these changes are worth doing without checking various sources of information, as it would all be in one place.
 
+To visit the website under construction: http://going-green.chezleskrus.com/
+
+
+15/01/18: two languages working : FR and EN
+
+
+**next steps:**
+- more work on the index page (buttons functions, 'learn more >>' sections)
+- allow to change units from settings page
+- change the colour theme
+- improve the responsive CSS on small devices
+- work the email results section
+- improve accessibility
+- changes to make this a PWA
+- work on the 'Grow your own' section
+
+
 ---
 
 ## Design goals
