@@ -46,7 +46,8 @@ module.exports.routes = {
   'get /settings': 'PagesController.settings',
 
   'get /about': 'PageController.about',
-  'get /changeLanguage' : 'PageController.changeLanguage'
+  'get /saveLanguage': 'PageController.saveLanguage' // used to pass the new language setting from the client to the server
+
 
 
 

@@ -32,12 +32,12 @@
                               <label for="number-of-hens"><%= __('Number of hens:') %> </label>
                               <div class="input-group">
                                   <div class="input-group-btn">
-                                    <button type="button" class="btn btn-default" aria-label="minus one" role="button"><span class="glyphicon glyphicon-minus"></span></button>
+                                    <button type="button" class="btn btn-default" aria-label="minus one" role="button" onclick="minushen()"><span class="glyphicon glyphicon-minus"></span></button>
                                   </div>
                                   <input type="number" class="form-control width-1" name="number-of-hens" id="number-of-hens" aria-label="number of hens" placeholder="0">
                                   <div class="input-group-btn">
-                                      <button type="button" class="btn btn-default" aria-label="plus one" role="button"><span class="glyphicon glyphicon-plus"></span></button>
-                                      <button type="button" class="btn btn-danger" aria-label="reset" role="button"><%= __('RESET') %></button>
+                                      <button type="button" class="btn btn-default" aria-label="plus one" role="button" onclick="plushen()"><span class="glyphicon glyphicon-plus"></span></button>
+                                      <button type="button" class="btn btn-danger" aria-label="reset" role="button" onclick="resethen()"><%= __('RESET') %></button>
                                   </div>
                               </div>
                             </div>
@@ -49,8 +49,8 @@
                           <form class="form-horizontal">
                             <div class="form-group">
                                 <label class="col-xs-3 control-label"><%=  __('Space to roam:') %> </label>
-                                <label class="col-xs-1 control-label"><%=typeof spaceToRoam == 'undefined' ? '0' : spaceToRoam %></label>
-                                <% if (selectedSystem == 'metric') { %>
+                                <label class="col-xs-1 control-label">0</label>
+                                <% if (settingsTable.selectedSystem == 'metric') { %>
                                 <label class="col-xs-3 control-label"><%=  __('square meters') %></label>
                                 <% } else { %>
                                 <label class="col-xs-3 control-label"><%=  __('square feet') %></label>
@@ -60,8 +60,8 @@
                           <form class="form-horizontal">
                             <div class="form-group">
                               <label class="col-xs-3 control-label"><%=  __('Space for the coop:') %> </label>
-                              <label class="col-xs-1 control-label"><%=typeof spaceForCoop == 'undefined' ? '0' : spaceForCoop %></label>
-                              <% if (selectedSystem == 'metric') { %>
+                              <label class="col-xs-1 control-label">0</label>
+                              <% if (settingsTable.selectedSystem == 'metric') { %>
                               <label class="col-xs-3 control-label"><%=  __('square meters') %></label>
                               <% } else { %>
                               <label class="col-xs-3 control-label"><%=  __('square feet') %></label>
@@ -71,8 +71,8 @@
                           <form class="form-horizontal">
                             <div class="form-group">
                               <label class="col-xs-3 control-label"><%=  __('Total space needed:') %> </label>
-                              <label class="col-xs-1 control-label"><%=typeof totalSpace == 'undefined' ? '0' : totalSpace  %></label>
-                              <% if (selectedSystem == 'metric') { %>
+                              <label class="col-xs-1 control-label">0</label>
+                              <% if (settingsTable.selectedSystem == 'metric') { %>
                               <label class="col-xs-3 control-label"><%=  __('square meters') %></label>
                               <% } else { %>
                               <label class="col-xs-3 control-label"><%=  __('square feet') %></label>
@@ -82,7 +82,7 @@
                           <form class="form-horizontal margin-top-3">
                             <div class="form-group">
                               <label class="col-xs-3 control-label"><%=  __('Number of eggs') %></label>
-                              <label class="col-xs-1 control-label"><%=typeof numberOfEggs == 'undefined' ? '0' : numberOfEggs %></label>
+                              <label class="col-xs-1 control-label">0</label>
                               <label class="col-xs-3 control-label">(<%=  __('per week') %>)</label>
                             </div>
                           </form>

@@ -21,11 +21,19 @@
 
       <div id="navbar" class="navbar-collapse collapse">
           <a href="index" class="nav-menu"><%= __('Home') %></a>
-          <a href="about_EN" class="nav-menu"><%= __('About') %></a>     <!-- about generic -->
+
+
+          <a href="<% if (settingsTable.selectedLang === 'en') { %>about_EN
+                  <% } else { %>about_FR
+                  <% } %>" class="nav-menu"><%= __('About') %></a>
+
+
           <a href="design" class="nav-menu"><%= __('Design') %></a>
           <a href="settings" class="nav-menu"><%= __('Settings') %></a>
-          <a href="about_FR" class="nav-menu">                           <!-- changeLanguage -->
-              <% if (selectedLang === 'en') { %>
+
+
+          <a href="#" class="nav-menu" onclick="changeLanguage()">
+              <% if (settingsTable.selectedLang === 'en') { %>
                   <img class="icon-flag" src="images/flag-french.jpg">français</a>
                   <% } else { %>
                   <img class="icon-flag" src="images/flag-english.jpg">English</a>
@@ -34,5 +42,14 @@
 
     </div>
   </div>
+
+
+  <script>
+    // to pass the settings from the server table below to the javascript file (myJavascript)
+    var mySettings = {
+      "selectedLang": "<%= settingsTable.selectedLang %>"
+    }
+  </script>
+
 </div>
 

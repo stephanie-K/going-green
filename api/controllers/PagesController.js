@@ -7,79 +7,79 @@
  * @description :: Controller description
  */
 
-const SPACE_FOR_COOP_FEET = 4;
-const SPACE_FOR_RUNNING_FEET = 10;
-const SPACE_FOR_COOP_METER = 0.4;
-const SPACE_FOR_RUNNING_METER = 1;
-const EGGS_PER_HEN = 300;
-const WATER_SAVED_PER_PERSON = 70;
 
-// default settings;
-var selectedLang = 'en';
-var selectedSystem = 'metric'
+var settingsTable = {
 
-function changeLanguage (req, res) {
-  selectedLang = req.getLocale(); // swap language as only two for now
-  if (selectedLang === 'en') {
-    selectedLang = 'fr'
-    } else {
-    selectedLang = 'en'
-  }
-  req.setLocale (selectedLang);
-  window.location.reload(true);
+  selectedLang :  'en',
+  selectedSystem : 'metric',
+  selectedTheme:  'default'
+};
+
+// ---- helpers for changing languages
+
+function saveLanguage(req, res) { // when called via route.js, save the new language in the object
+  settingsTable.selectedLang = req.session.newLanguage
 }
 
+function updateLanguage(req) {
+  if(req.query.newLanguage) { // a new language value has been passed via javascript client side then routes, then here
+    //console.log('new lang: ', req.query.newLanguage);
+    settingsTable.selectedLang = req.query.newLanguage
+  }
+  req.setLocale(settingsTable.selectedLang); // overide so update the lang attributevfor the html tag
+}
 
+// ---- rendering the pages
 
 function index(req, res) {
-  req.setLocale('fr');
-  selectedLang = req.getLocale();
-  res.view('pages/index', {selectedLang: selectedLang , selectedSystem: selectedSystem});
-}
-
-function about(req, res){
-   if (selectedLang === 'en') {
-     res.redirect('/pages/about_EN'); //, {selectedLang: 'en'});
-    } else {
-     res.redirect('/pages/about_FR'); //, {selectedLang: 'fr'});
-   }
-}
-
-function aboutEN(req, res){
-  res.view('pages/about_EN', {selectedLang: selectedLang});
-}
-
-function aboutFR(req, res) {
-  req.setLocale('fr');
-  res.view('pages/about_FR', {selectedLang: 'fr'});
+  updateLanguage(req);
+  res.view('pages/index', {settingsTable: settingsTable});
 }
 
 function design(req, res) {
-  req.setLocale('fr');
-  selectedLang = req.getLocale();
-  res.view('pages/design', {selectedLang:  selectedLang});
+  updateLanguage(req);
+  res.view('pages/design', {settingsTable: settingsTable});
 }
 
 function empty(req, res) {
-  res.view('pages/empty_page' ,{selectedLang: selectedLang});
+  updateLanguage(req);
+  res.view('pages/empty_page' , {settingsTable: settingsTable});
 }
 
 function settings(req, res) {
-  res.view('pages/settings', {selectedLang: selectedLang});
+  updateLanguage(req);
+  res.view('pages/settings', {settingsTable: settingsTable});
+}
+
+
+
+function aboutEN(req, res){
+  updateLanguage(req);
+  if ( settingsTable.selectedLang === 'fr') { // in case user changes language on the EN page
+    res.view('pages/about_FR', {settingsTable: settingsTable});
+  } else {
+    res.view('pages/about_EN', {settingsTable: settingsTable});
+  }
+}
+
+function aboutFR(req, res) {
+  updateLanguage(req);
+  if (settingsTable.selectedLang === 'fr') {
+    res.view('pages/about_FR', {settingsTable: settingsTable});
+  } else {
+  //in case user changes language on the FR page
+    res.view('pages/about_EN', {settingsTable: settingsTable});
+  }
 }
 
 
 
 
-
-
-module.exports = {
+module.exports = { // only those who can be called from route.js
   index: index,
   aboutEN: aboutEN,
   aboutFR: aboutFR,
   design: design,
   empty: empty,
-  settings: settings,
-  about: about,
-  changeLanguage: changeLanguage
+  settings: settings
 };
