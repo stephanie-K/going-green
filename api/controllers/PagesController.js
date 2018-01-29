@@ -9,7 +9,6 @@
 
 
 var settingsTable = {
-
   selectedLang :  'en',
   selectedSystem : 'metric',
   selectedTheme:  'default'
@@ -41,6 +40,12 @@ function design(req, res) {
   res.view('pages/design', {settingsTable: settingsTable});
 }
 
+function about(req, res) {
+  updateLanguage(req);
+  res.view('pages/about', {settingsTable: settingsTable});
+}
+
+
 function empty(req, res) {
   updateLanguage(req);
   res.view('pages/empty_page' , {settingsTable: settingsTable});
@@ -53,32 +58,33 @@ function settings(req, res) {
 
 
 
-function aboutEN(req, res){
-  updateLanguage(req);
-  if ( settingsTable.selectedLang === 'fr') { // in case user changes language on the EN page
-    res.view('pages/about_FR', {settingsTable: settingsTable});
-  } else {
-    res.view('pages/about_EN', {settingsTable: settingsTable});
-  }
-}
+// function aboutEN(req, res){
+//   updateLanguage(req);
+//   if ( settingsTable.selectedLang === 'fr') { // in case user changes language on the EN page
+//     res.view('pages/about_FR', {settingsTable: settingsTable});
+//   } else {
+//     res.view('pages/about_EN', {settingsTable: settingsTable});
+//   }
+// }
 
-function aboutFR(req, res) {
-  updateLanguage(req);
-  if (settingsTable.selectedLang === 'fr') {
-    res.view('pages/about_FR', {settingsTable: settingsTable});
-  } else {
-  //in case user changes language on the FR page
-    res.view('pages/about_EN', {settingsTable: settingsTable});
-  }
-}
+// function aboutFR(req, res) {
+//   updateLanguage(req);
+//   if (settingsTable.selectedLang === 'fr') {
+//     res.view('pages/about_FR', {settingsTable: settingsTable});
+//   } else {
+//   //in case user changes language on the FR page
+//     res.view('pages/about_EN', {settingsTable: settingsTable});
+//   }
+// }
 
 
 
 
 module.exports = { // only those who can be called from route.js
   index: index,
-  aboutEN: aboutEN,
-  aboutFR: aboutFR,
+  //aboutEN: aboutEN,
+  //aboutFR: aboutFR,
+  about: about,
   design: design,
   empty: empty,
   settings: settings

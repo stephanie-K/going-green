@@ -2,21 +2,21 @@
 <%- include ../partials/navbar %>
 
 <% if (settingsTable.selectedLang == 'fr') { %>
-<div class="alert alert-warning text-center" role="alert">Cette page n'est disponible qu'en anglais pour le moment.</div>
+<div class="alert alert-warning text-center" role="alert">Cette page n'est traduite qu'en partie pour le moment, le reste est en anglais.</div>
 <% } %>
 
 <div class="featurette">
     <div class="row">
         <div class="col-xs-12 clearfix">
             <h1 class="margin-3 text-center"><%= __('The design process') %><span class="label label-danger to-right"><%= __('Under construction') %></span></h1>
-            <p class="lead">It started with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm going further with a Progressive Web App and more usability testing will be done all along.</p>
+            <p class="lead"><%= __("It started with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm working toward a Progressive Web App and more usability testing will be done all along.") %></p>
 
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                 <div class="panel panel-theme-color">
                     <div class="panel-heading" role="tab" id="heading1">
                         <h2 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Responsive application</a>
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1"><%= __('Responsive application') %></a>
                         </h2>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
@@ -38,7 +38,7 @@
                 <div class="panel panel-theme-color" >
                     <div class="panel-heading" role="tab" id="heading2">
                         <h2 class="panel-title">
-                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Give a green feel visual, but still accommodate colour-blind users</a>
+                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><%= __('Give a green feel visual, but still accommodate colour-blind users') %></a>
                         </h2>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
@@ -76,7 +76,7 @@
                 <div class="panel panel-theme-color">
                     <div class="panel-heading" role="tab" id="heading3">
                         <h2 class="panel-title">
-                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Choice of language</a>
+                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><%= __('Choice of language') %></a>
                         </h2>
                     </div>
                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
@@ -93,7 +93,7 @@
                 <div class="panel panel-theme-color">
                     <div class="panel-heading" role="tab" id="heading4">
                         <h2 class="panel-title">
-                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">Ease of use for expert users but also for users with little experience of apps</a>
+                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><%= __('Ease of use for expert users but also for users with little experience of apps') %></a>
                         </h2>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
@@ -105,7 +105,7 @@
                 <div class="panel panel-theme-color">
                     <div class="panel-heading" role="tab" id="heading5">
                         <h2 class="panel-title">
-                            <a data-toggle="collapse" role="button"  data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">Start with UK users but extends further with wider geographical data</a>
+                            <a data-toggle="collapse" role="button"  data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5"><%= __('Start with UK users but extends further with wider geographical data') %></a>
                         </h2>
                     </div>
                     <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
@@ -120,7 +120,7 @@
                 <div class="panel panel-theme-color">
                     <div class="panel-heading" role="tab" id="heading6">
                         <h2 class="panel-title">
-                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">Source of information used</a>
+                            <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6"><%= __('Source of information used') %></a>
                         </h2>
                     </div>
                     <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
@@ -141,6 +141,34 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="panel panel-theme-color">
+                    <div class="panel-heading" role="tab" id="heading7">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" role="button"  data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7"><%= __('Design plan') %></a>
+                        </h2>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                        <div class="panel-body">
+                            <p>A lot of work remains to be done to implement the basic app</p>
+                            <ul>
+                                <li>finish sections about chickens, water, solar panels</li>
+                                <li>complete the 'send result via email' section</li>
+                                <li>change the theme and unit</li>
+                                <li>complete the basic for 'Grow your own'</li>
+                                <li>usability testing and implement improvements</li>
+                            </ul>
+                            <p class="margin-top-2">Then I'll go further:</p>
+                            <ul>
+                                <li>make the changes for the app to be a PWA</li>
+                                <li>add more languages</li>
+                                <li>explore possibilities of extending to users outside the UK (Weather databases)</li>
+                            </ul>
+                            <p class="margin-top-2"><strong>Last update: 29/01/2018</strong></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
