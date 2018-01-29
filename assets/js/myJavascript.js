@@ -8,13 +8,13 @@ function displayVerticalMenu() {
   $("#navbar").toggleClass("responsive")
 }
 
-
-
 function changeLanguage() {
   // mySettings is assigned in script tags at the bottom of navbar.ejs, that way I can pass the values of the object in PagesController to the client side
   var newLang = mySettings.selectedLang === "en" ? "fr" : "en"; // swap the languages
-  var basePage = "http://" + window.location.hostname + ":" + window.location.port + window.location.pathname;
-  window.location.assign(basePage + "?newLanguage=" + newLang); // to pass the value back to the server as a URL parameter
+  var url = window.location.pathname + "?newLanguage=" + newLang
+  window.location.assign(url); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
+  //var basePage = "http://" + window.location.hostname + ":" + window.location.port + window.location.pathname;
+  //window.location.assign(basePage + "?newLanguage=" + newLang); // to pass the value back to the server as a URL parameter
 }
 
 
@@ -27,7 +27,7 @@ const SPACE_FOR_RUNNING_METER = 1;
 const EGGS_PER_HEN = 300;
 const WATER_SAVED_PER_PERSON = 70;
 
-/* *********************  display of values and buttons fucntion on the index page   **************************** */
+/* *********************  display of values and buttons function on the index page   **************************** */
 var valuesTable = {
 
   numberHen: 0,
