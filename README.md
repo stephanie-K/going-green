@@ -8,6 +8,7 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 
 15/01/18: two languages working : FR and EN
+
 29/01/18: change of unit working - chicken and water sections mostly done
 
 
