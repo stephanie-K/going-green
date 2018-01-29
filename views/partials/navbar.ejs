@@ -25,7 +25,6 @@
           <a href="design" class="nav-menu"><%= __('Design') %></a>
           <a href="settings" class="nav-menu"><%= __('Settings') %></a>
 
-
           <a href="#" class="nav-menu" onclick="changeLanguage()">
               <% if (settingsTable.selectedLang === 'en') { %>
                   <img class="icon-flag" src="images/flag-french.jpg">français</a>
@@ -41,7 +40,9 @@
   <script>
     // to pass the settings from the server table below to the javascript file (myJavascript)
     var mySettings = {
-      "selectedLang": "<%= settingsTable.selectedLang %>"
+      "selectedLang": "<%= settingsTable.selectedLang %>",
+      "selectedSystem": "<%= settingsTable.selectedSystem %>",
+      "selectedTheme": "<%= settingsTable.selectedTheme %>"
     }
   </script>
 

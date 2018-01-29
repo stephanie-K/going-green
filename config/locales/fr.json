@@ -26,6 +26,7 @@
   "Number of eggs" : "nombre d'oeufs",
   "per week" : "par semaine",
   "Learn more": "En savoir plus",
+  "See less": "Voir moins",
   "Select a location": "Choisir une région",
   "England": "Angleterre",
   "Scotland": "Écosse",
@@ -37,6 +38,15 @@
   "litres of potable water per day could be saved by recycling grey water": "litres d'eau potable par jour pourraient être économisés en recyclant les eaux grises.",
   "Various starter crops with advices": "Différentes plantes et des conseils",
   "To chose to receive an email with all the results from the various selections done on this page": "Pour recevoir un mail avec les résultats en fonction de vos sélections sur cette page",
+  "The number of eggs you can expect will depend on the breed of hens and their age.": "Le nombre d'oeufs obtenus dépendra de la race de vos poules et de leur âge.",
+  "If you have more than 5 chickens, you can plan for less space than the numbers above. If the chickens spend a lot of time outside then the coop can be smaller.":
+       "Si vous avez plus de 5 poules, vous pouvez prévoir moins d'espace. Si les poules passent la plupart de leur temps dehors alors le poulailler peut être plus petit.",
+  "Grey water is the waste water from baths, showers, washing machines, dishwashers, and sinks, which typically makes up between 50-80% of households waste water.":
+       "Les eaux grises sont composées de l'eau des bains, douches, machine à laver, lave-vaisselle, et éviers, ce qui fait entre 50 et 80% des eaux usées des foyers.",
+  "Grey water is never going to be safe to drink, even when treated, but it can be used to flush toilets, wash clothes and water your garden.": 
+      "L'eau grise n'est jamais potable, même traitée, mais elle peut être utilisée pour les toilettes, laver les vêtements ou arroser votre jardin.",
+  "There are various ways to treat grey water, ranging from very simple methods to complex fully automated treatment systems, depending on what you want to use the water for.": 
+      "Il y a différentes façons de traiter l'eau grise, allant de méthodes très simples à des méthodes complexes complètement automatisées, en fonction de l'usage que vous souhaitez faire de cette eau.",
 
 
   "Unit": "Système",
