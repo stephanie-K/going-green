@@ -51,13 +51,13 @@ const WATER_SAVED_PER_PERSON = 70;
 //TODO save these values before leaving the page if changes? also will be used to send email
 var valuesTable = {
 
-  numberHen: 0,
+  numberHen: 1,
   spaceToRoam: 0,
   spaceForCoop: 0 ,
   totalSpace: 0,
   numberOfEggs: 0,
   numberOfPerson: 1,
-  waterSaved: 0,
+  waterSaved: 70,
   location: "unknown"
 
 };

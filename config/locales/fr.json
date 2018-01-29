@@ -49,19 +49,16 @@
       "Il y a différentes façons de traiter l'eau grise, allant de méthodes très simples à des méthodes complexes complètement automatisées, en fonction de l'usage que vous souhaitez faire de cette eau.",
 
 
-  "Unit": "Système",
-  "Change unit to:" : "Système sélectionné :",
+  "Unit" : "Système sélectionné",
   "Metric": "Métrique",
   "Imperial": "Impérial",
-  "Colour theme": "Couleur du thème",
-  "Change the colour theme to:": "Les couleurs du thème sélectionné :",
+  "Colour theme": "Les couleurs du thème sélectionné",
   "Default (wood, green, yellow)": "Par défault (bois, vert et jaune)",
   "Plain (white, dark green, grey)": "Simple (blanc, vert foncé et gris)",
   "Blue (white, blue, grey)": "Bleu (blanc, bleu, et gris)",
-  "Language": "Langues",
-  "Change the language to:": "Langue sélectionnée",
-  "Selecting a language will happen here once we have more choices available for: Spanish, Italian, German, Dutch, and Gaelic.": "La langue pourra être sélectionnée ici, une fois qu'il y aura plus de choix.",
-  "For now, you can change the language from French to English from the top menu.": "Pour le moment, vous pouvez choisir entre le français et l'anglais dans la barre menu en haut.",
+  "Language": "Langue sélectionnée",
+  "More choices will be available later: Spanish, Italian, German, Dutch, and Gaelic.": "Il y aura plus de choix plus tard: espagnol, italien, allemand, néerlandais et gaélique.",
+  "For now, you can change the language from French to English here or from the top menu.": "Pour le moment, vous pouvez choisir entre le français et l'anglais ici ou dans la barre menu en haut.",
 
 
   "It started with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm working toward a Progressive Web App and more usability testing will be done all along.":
