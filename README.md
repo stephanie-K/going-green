@@ -8,17 +8,18 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 
 15/01/18: two languages working : FR and EN
+29/01/18: change of unit working - chicken and water sections mostly done
 
 
 **next steps:**
-- more work on the index page (buttons functions, 'learn more >>' sections)
-- allow to change units from settings page
+- solar panel section to do
+- memorise values on index page
 - change the colour theme
-- improve the responsive CSS on small devices
 - work the email results section
 - improve accessibility
 - changes to make this a PWA
 - work on the 'Grow your own' section
+- add more languages
 
 
 ---
