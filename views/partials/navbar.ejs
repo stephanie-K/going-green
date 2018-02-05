@@ -15,7 +15,7 @@
           <span class="glyphicon glyphicon-triangle-bottom"></span>
           <!--span class="glyphicon glyphicon-option-vertical"></span-->
         </button>
-        <a class="nav-brand" href="index"><img class="logo" src="favicon.ico" alt="logo of a hand holding a plant">Going Green</a>
+        <a class="nav-brand" href="index"><img class="logo" src="images/icons/logo-white.png" alt="logo of a hand holding a plant">Going Green</a>
 
       </div>
 
@@ -26,25 +26,13 @@
           <a href="settings" class="nav-menu"><%= __('Settings') %></a>
 
           <a href="#" class="nav-menu" onclick="changeLanguage()">
-              <% if (settingsTable.selectedLang === 'en') { %>
+              <% if (settings.selectedLang === 'en') { %>
                   <img class="icon-flag" src="images/flag-french.jpg">français</a>
                   <% } else { %>
                   <img class="icon-flag" src="images/flag-english.jpg">English</a>
                   <% } %>
       </div>
-
     </div>
   </div>
-
-
-  <script>
-    // to pass the settings from the server table below to the javascript file (myJavascript)
-    var mySettings = {
-      "selectedLang": "<%= settingsTable.selectedLang %>",
-      "selectedSystem": "<%= settingsTable.selectedSystem %>",
-      "selectedTheme": "<%= settingsTable.selectedTheme %>"
-    }
-  </script>
-
 </div>
 

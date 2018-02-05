@@ -51,6 +51,14 @@
   </head>
 
   <body>
+  <% if (!settings.noCookieNotice) { // if the user never closed the cookie notice before %>
+  <div class="row">
+    <div id="cookienotice"><%= __('This site uses cookies') %>
+                          <a href="#" id="cookiepolicylink" title="see-cookie-policy" target="_top"><%= __('Learn more') %></a> 
+                          <a class="btn button-primary btn-md cookienoticebutton" role="button" href="#void" onclick="cookieNoticeClose();" title="Do not show this message"><%= __('Close')%></a>
+    </div>
+  </div>
+  <% } %>
     <noscript>
       <div class="alert alert-danger text-center" role="alert"><strong>WARNING! </strong>Javascript is disabled. Without javascript the app won't work properly. Sorry!</div>
     </noscript>

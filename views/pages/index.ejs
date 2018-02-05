@@ -50,7 +50,7 @@
                             <div class="form-group">
                                 <label class="col-xs-3 control-label"><%=  __('Space to roam:') %> </label>
                                 
-                                <label class="col-xs-4 control-label"><span id="space-to-roam">0</span> <% if (settingsTable.selectedSystem == 'metric') { %>
+                                <label class="col-xs-4 control-label"><span id="space-to-roam">0</span> <% if (settings.selectedUnit == 'metric') { %>
                                     <%=  __('square meters') %>
                                 <% } else { %>
                                     <%=  __('square feet') %>
@@ -61,7 +61,7 @@
                           <form class="form-horizontal">
                             <div class="form-group">
                               <label class="col-xs-3 control-label"><%=  __('Space for the coop:') %> </label>
-                                <label class="col-xs-4 control-label"><span id="space-for-coop">0</span> <% if (settingsTable.selectedSystem == 'metric') { %>
+                                <label class="col-xs-4 control-label"><span id="space-for-coop">0</span> <% if (settings.selectedUnit == 'metric') { %>
                                     <%=  __('square meters') %>
                                 <% } else { %>
                                     <%=  __('square feet') %>
@@ -71,7 +71,7 @@
                           <form class="form-horizontal">
                             <div class="form-group">
                               <label class="col-xs-3 control-label"><%=  __('Total space needed:') %> </label>
-                                <label class="col-xs-4 control-label"><span id="total-space">0</span> <% if (settingsTable.selectedSystem == 'metric') { %>
+                                <label class="col-xs-4 control-label"><span id="total-space">0</span> <% if (settings.selectedUnit == 'metric') { %>
                                     <%=  __('square meters') %>
                                 <% } else { %>
                                     <%=  __('square feet') %>

@@ -16,7 +16,7 @@
       <div class="col-xs-3 col-xs-offset-1">
           <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="metric" name="unit" value="metric"  <% if (settingsTable.selectedSystem === "metric")  { %> checked <% } %> onclick="changeSystem()">
+                <input type="radio" aria-label="metric" name="unit" value="metric"  <% if (settings.selectedUnit === "metric")  { %> checked <% } %> onclick="changeSystem()">
             </span>
             <input type="text" class="form-control input-group-medium width-2" aria-label="metric" name="unit" value="<%= __('Metric') %>">
           </div>
@@ -27,7 +27,7 @@
       <div class="col-xs-3 col-xs-offset-1">
         <div class="input-group">
               <span class="input-group-addon">
-                  <input type="radio" aria-label="imperial" name="unit" value="imperial" <% if (settingsTable.selectedSystem === "imperial")  { %> checked <% } %> onclick="changeSystem()">
+                  <input type="radio" aria-label="imperial" name="unit" value="imperial" <% if (settings.selectedUnit === "imperial")  { %> checked <% } %> onclick="changeSystem()">
               </span>
           <input type="text" class="form-control input-group-medium width-2" aria-label="imperial" name="unit" value="<%= __('Imperial') %>">
         </div>
@@ -45,7 +45,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
           <span class="input-group-addon">
-              <input type="radio" aria-label="default" name="theme" value="default" <% if (settingsTable.selectedTheme === "default")  { %> checked <% } %> onclick="changeTheme()" disabled>
+              <input type="radio" aria-label="default" name="theme" value="default" <% if (settings.selectedTheme === "default")  { %> checked <% } %> onclick="changeTheme("default")" disabled>
           </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="default" name="theme" value="<%= __('Default (wood, green, yellow)') %>">
       </div>
@@ -56,7 +56,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
                   <span class="input-group-addon">
-                      <input type="radio" aria-label="plain" name="theme" value="plain" <% if (settingsTable.selectedTheme === "plain")  { %> checked <% } %> onclick="changeTheme()" disabled>
+                      <input type="radio" aria-label="plain" name="theme" value="plain" <% if (settings.selectedTheme === "plain")  { %> checked <% } %> onclick="changeTheme("plain")" disabled>
                   </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="plain" name="theme" value="<%= __('Plain (white, dark green, grey)') %>">
       </div>
@@ -67,7 +67,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
                   <span class="input-group-addon">
-                      <input type="radio" aria-label="blue" name="theme" value="blue" <% if (settingsTable.selectedTheme === "blue")  { %> checked <% } %> onclick="changeTheme()" disabled>
+                      <input type="radio" aria-label="blue" name="theme" value="blue" <% if (settings.selectedTheme === "blue")  { %> checked <% } %> onclick="changeTheme("blue")" disabled>
                   </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="blue" name="theme" value="<%= __('Blue (white, blue, grey)') %>">
       </div>
@@ -85,7 +85,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
                   <span class="input-group-addon">
-                      <input type="radio" aria-label="german" name="language" value="german" <% if (settingsTable.selectedLang === "de")  { %> checked <% } %> disabled>
+                      <input type="radio" aria-label="german" name="language" value="german" <% if (settings.selectedLang === "de")  { %> checked <% } %> disabled>
                   </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="german" name="language" value="Deutsch">
       </div>
@@ -96,7 +96,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
           <span class="input-group-addon">
-              <input type="radio" aria-label="english" name="language" value="english" <% if (settingsTable.selectedLang === "en")  { %> checked <% } %> onclick="changeLanguage()">
+              <input type="radio" aria-label="english" name="language" value="english" <% if (settings.selectedLang === "en")  { %> checked <% } %> onclick="changeLanguage()">
           </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="english" name="language" value="English">
       </div>
@@ -107,7 +107,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="spanish" name="language" value="spanish" <% if (settingsTable.selectedLang === "es")  { %> checked <% } %> disabled> 
+                <input type="radio" aria-label="spanish" name="language" value="spanish" <% if (settings.selectedLang === "es")  { %> checked <% } %> disabled> 
             </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="spanish" name="language" value="Español">
       </div>
@@ -118,7 +118,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="french" name="language" value="french" <% if (settingsTable.selectedLang === "fr")  { %> checked <% } %> onclick="changeLanguage()">
+                <input type="radio" aria-label="french" name="language" value="french" <% if (settings.selectedLang === "fr")  { %> checked <% } %> onclick="changeLanguage()">
             </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="french" name="language" value="Français">
       </div>
@@ -130,7 +130,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="gaelic" name="language" value="gaelic" <% if (settingsTable.selectedLang === "gc")  { %> checked <% } %> disabled>
+                <input type="radio" aria-label="gaelic" name="language" value="gaelic" <% if (settings.selectedLang === "gc")  { %> checked <% } %> disabled>
                 
             </span>
             <input type="text" class="form-control input-group-medium width-2" aria-label="gaelic" name="language" value=" Gàidhlig">
@@ -143,7 +143,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="italian" name="language" value="italian" <% if (settingsTable.selectedLang === "it")  { %> checked <% } %> disabled>
+                <input type="radio" aria-label="italian" name="language" value="italian" <% if (settings.selectedLang === "it")  { %> checked <% } %> disabled>
             </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="italian" name="language" value="Italiano">
       </div>
@@ -154,7 +154,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
             <span class="input-group-addon">
-                <input type="radio" aria-label="dutch" name="language" value="dutch" <% if (settingsTable.selectedLang === "ne")  { %> checked <% } %> disabled>
+                <input type="radio" aria-label="dutch" name="language" value="dutch" <% if (settings.selectedLang === "ne")  { %> checked <% } %> disabled>
             </span>
         <input type="text" class="form-control input-group-medium width-2" aria-label="dutch" name="language" value="Nederlands">
       </div>

@@ -7,60 +7,54 @@
  * @description :: Controller description
  */
 
+// ---------------------------------------------------- rendering the pages
 
-var settingsTable = {
-  selectedLang :  'en',
-  selectedSystem : 'metric',
-  selectedTheme:  'default'
-};
-
-// ---- helpers for changing languages
-
-// function saveLanguage(req, res) { // when called via route.js, save the new language in the object
-//   settingsTable.selectedLang = req.session.newLanguage
-// }
-
-function updateLanguage(req) {
-  if(req.query.newLanguage) { // a new language value has been passed via javascript client side then routes, then here
-    settingsTable.selectedLang = req.query.newLanguage
+function genView(view, req, res) {
+  // default values
+  var settings = {
+    selectedLang: "en",
+    selectedUnit: "metric",
+    selectedTheme: "default",
+    noCookieNotice: false
   }
-  req.setLocale(settingsTable.selectedLang); // overrides so update the lang attribute for the html tag
-}
-
-// will be changed later as this is only needed for the index page. We should not have to reload the page
-function updateUnit(req) {
-  if(req.query.newUnit) { // a new unit value has been passed via javascript client side then routes, then here
-    settingsTable.selectedSystem = req.query.newUnit
+  // if the cookies holds a different value, then assigned it to the settings
+  if (req.cookies.selectedLang) {
+    settings.selectedLang = req.cookies.selectedLang;
   }
-}
+  if (req.cookies.selectedUnit) {
+    settings.selectedUnit = req.cookies.selectedUnit;
+  }
+  if (req.cookies.selectedTheme) {
+    settings.selectedTheme = req.cookies.selectedTheme;
+  }
+  if (req.cookies.noCookieNotice) {
+    settings.noCookieNotice = req.cookies.noCookieNotice;
+  }
 
-// ---- rendering the pages
+  // setLocale to cookie selected language
+  req.setLocale(settings.selectedLang); // overrides so update the lang attribute for the html tag
+  res.view(view, {settings: settings}); 
+}
 
 function index(req, res) {
-  updateLanguage(req);
-  res.view('pages/index', {settingsTable: settingsTable}); // passing the settings (script in the navbar so on each page)
+  genView('pages/index', req, res); // passing the settings (script in the navbar so on each page)
 }
 
 function design(req, res) {
-  updateLanguage(req);
-  res.view('pages/design', {settingsTable: settingsTable});
+  genView('pages/design', req, res);
 }
 
 function about(req, res) {
-  updateLanguage(req);
-  res.view('pages/about', {settingsTable: settingsTable});
+  genView('pages/about', req, res);
 }
 
-
 function empty(req, res) {
-  updateLanguage(req);
-  res.view('pages/empty_page' , {settingsTable: settingsTable});
+  genView('pages/empty_page', req, res);
 }
 
 function settings(req, res) {
-  updateLanguage(req);
-  updateUnit(req); 
-  res.view('pages/settings', {settingsTable: settingsTable});
+  //updateUnit(req); 
+  genView('pages/settings', req, res);
 }
 
 
