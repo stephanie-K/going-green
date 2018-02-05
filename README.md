@@ -11,6 +11,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 29/01/18: change of unit working - chicken and water sections mostly done
 
+05/02/18: add cookies to memorise the preferences and add a cookie policy
+
 
 **next steps:**
 - solar panel section to do
