@@ -11,7 +11,7 @@ function displayVerticalMenu() {
 
 function cookieNoticeClose() {
   $("#cookienotice").hide();
-  createCookie("noCookieNotice", 1) // the user doesn't want to see the cookie notice
+  createCookie("noCookieNotice", 1, 30) // the user doesn't want to see the cookie notice
 }
 
 function createCookie(name, value, days) {
@@ -19,7 +19,7 @@ function createCookie(name, value, days) {
 
   if (days) {
       var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      date.setTime(date.getTime() + (days * 24 * 60 * 60));
       expires = "; expires=" + date.toGMTString();
   } else {
       expires = "";
@@ -55,7 +55,7 @@ function changeLanguage() {
   var newLang = currentLanguage() === "en" ? "fr" : "en"; // swap the languages
   var pathname = window.location.pathname;
   //var url = pathname + "?newLanguage=" + newLang;
-  createCookie("selectedLang", newLang);
+  createCookie("selectedLang", newLang, 30);
   window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false; // otherwise it wasn't working on some browser, as onclick on an <a> element was returning the # instead of the URL parameter
 }
@@ -73,7 +73,7 @@ function changeSystem() {
   var newSystem = currentUnit() === "metric" ? "imperial" : "metric"; // swap the unit 
   //var pathname = window.location.pathname;
   //var url = pathname + "?newUnit=" + newSystem;
-  createCookie("selectedUnit", newSystem);
+  createCookie("selectedUnit", newSystem, 30);
  // window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false;
 }
@@ -89,7 +89,7 @@ function changeTheme(themeName) {
 var newTheme = themeName;
 var pathname = window.location.pathname;
   //var url = pathname + "?newTheme=" + newTheme;
-  createCookie("selectedTheme", newTheme);
+  createCookie("selectedTheme", newTheme, 30);
   window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false;
 }

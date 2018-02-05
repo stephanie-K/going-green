@@ -48,8 +48,8 @@ function about(req, res) {
   genView('pages/about', req, res);
 }
 
-function empty(req, res) {
-  genView('pages/empty_page', req, res);
+function cookies(req, res) {
+  genView('pages/cookies', req, res);
 }
 
 function settings(req, res) {
@@ -62,6 +62,6 @@ module.exports = { // only those who can be called from route.js
   index: index,
   about: about,
   design: design,
-  empty: empty,
+  cookies: cookies,
   settings: settings
 };

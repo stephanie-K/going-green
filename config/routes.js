@@ -41,7 +41,7 @@ module.exports.routes = {
   'get /index': 'PagesController.index',
   'get /about': 'PagesController.about',
   'get /design': 'PagesController.design',
-  'get /empty_page': 'PagesController.empty',
+  'get /cookies': 'PagesController.cookies',
   'get /settings': 'PagesController.settings',
   'get /saveLanguage': 'PageController.saveLanguage' // used to pass the new language setting from the client to the server
 
