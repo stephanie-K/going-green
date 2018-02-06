@@ -105,11 +105,13 @@
 "What is a cookie?": "Qu'est ce qu'un cookie ?",
 "A cookie is a small text file that’s stored on your computer or mobile device when you visit a website.": "Un cookie est un petit fichier texte créé lorsque vous visitez un site sur votre ordianteur ou votre téléphone",
 "Is there cookies in this application?": "Est ce qu'il y a des cookies sur cette application ?",
-"Yes, I use cookies to remember your settings next time you visit:": "Oui, j'utilise des cookies pour sauvegarder vos préférences lors de votre visite",
-" - This cookie remembers that you didn't want to see the cookie notice": " - Ce cookie mémorise que vous ne vouliez pas voir le bandeau sur les cookies",
-" - This cookie remembers the language you selected at your last visit": " - Ce cookie mémorise la langue que vous avez sélectionnée lors de votre dernière visite",
-" - This cookie remembers the unit you selected at your last visit (metric or imperial)": " - Ce cookie mémorise l'unité que vous avez sélectionnée lors de votre dernière visite (métrique ou impérial)",
-" - This cookie remembers the colour theme you selected at your last visit": " - Ce cookie mémorise le thème des couleurs que vous avez sélectionné lors de votre dernière visite",
+"Yes, I use cookies to remember your settings next time you visit: language, unit and colour theme.": "Oui, j'utilise des cookies pour sauvegarder vos préférences lors de votre visite : langue, unité, et couleurs du thème.",
+"I also use them to save the values you entered while changing the number of hens, location or crops selected for example.": "J'en utilise aussi pour conserver les valeurs choisies pour le nombre de poules, votre localisation, ou les plantes choisies par exemple.",
+"If you want to receive your results via email, then you will need to entered your email address. I do not stored, or send this email address to anyone else.": 
+        "Si vous souhaitez recevoir vos résultats par email, alors il vous faudra entrer votre adresse email. Elle ne sera ni conservée ni envoyée à qui que ce soit.",
+
+
+
 "How long are these cookies stored?": "Combien de temps les cookies sont-ils conservés ?",
 "I keep them for 30 days, after that you will need to re-select your prefered settings": "Je les conserve pendant 30 jours, ensuite, il vous faudra sélectionner de nouveau vos préférences",
 "Where can I learn more about cookies?": "Où puis en savoir plus sur les cookies ?",
