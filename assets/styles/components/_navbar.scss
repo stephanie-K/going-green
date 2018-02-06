@@ -15,6 +15,10 @@
     height: 60px;
     z-index: 16; /* to bring navbar to front. 1 was enough but for the carousel indicators (the 4 dots) */
 
+    @media #{$mqXSmallAndDown} {
+      height: 70px;
+    }
+    
     a {
         float: left;
         display: block;
@@ -31,8 +35,14 @@
         }
 
         @media #{$mqXSmallAndDown} {
-          font-size: 18px;
-          padding: 5px;
+          font-size: 16px;
+          padding: 10px 5px;
+          max-height: 40px;
+        }
+      
+        @media (max-width: 250px) { // to remove the title so there is just the logo left in super small screens
+          font-size: 0px;
+
         }
     }
 }
@@ -58,7 +68,7 @@
   #navbar.responsive {
     margin-top: 59px;
     position: absolute;
-    right: 0px;
+    right: 2em;
     width: 280px;
     padding-right: 0px;
 

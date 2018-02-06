@@ -5,17 +5,15 @@ html{
 
 
 body {
-    font-weight: 400;
-    font-size: 16px;
     margin-bottom: 100px; /* size of the sticky footer */
     padding-top: 60px; /* for the fixed nav bar which is 60px high by default */
 
-    a {
-      //font-weight: 500;
-    }
 
     @media #{$mqMediumAndDown} {
       margin-bottom: 250px; /* size of the sticky footer */
+    }
+    @media #{$mqXSmallAndDown} {
+      padding-top: 70px;
     }
 }
 
@@ -33,28 +31,12 @@ body {
     text-decoration: underline;
     padding: 0 20px;
     }
-}
-
-
-
-
-
-.lead {
-    font-weight: 400;
-}
-
-
-h1 {
-    @media #{$mqSmallAndDown} {
-      font-size: 24px;
+    @media #{$mqXSmallAndDown} {
+      height: 80px;
     }
 }
 
-h2 {
-  @media #{$mqSmallAndDown} {
-    font-size: 22px;
-  }
-}
+
 
 .to-right {
   float: right;

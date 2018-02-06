@@ -1,30 +1,111 @@
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+
+  @media #{$mqXSmallAndDown} {
+    font-size: 16px;
+  }
+}
+
+
+.lead {
+  font-weight: 400;
+  @media #{$mqSmallAndDown} {
+    font-size: 16px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 14px;
+  }
+}
+
+
+h1 {
+  @media #{$mqSmallAndDown} {
+    font-size: 24px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 20px;
+  }
+}
+
+h2 {
+  @media #{$mqSmallAndDown} {
+    font-size: 22px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 18px;
+  }
+}
+
+
+h3 {
+  @media #{$mqSmallAndDown} {
+    font-size: 20px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 16px;
+  }
+}
+
+
+
+.dropdown-medium {
+  font-size: 18px;
+  @media #{$mqSmallAndDown} {
+    font-size: 16px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 14px;
+  }
+}
+
+.input-group-medium {
+  font-size: 18px;
+  @media #{$mqSmallAndDown} {
+    font-size: 16px;
+  }
+  @media #{$mqXSmallAndDown} {
+    font-size: 14px;
+  }
+}
+
 .width-1 {
   max-width: 5em;
   min-width: 5em;
+  @media #{$mqSmallAndDown} {
+    max-width: 4em;
+    min-width: 4em;
+  }
 }
 
 .width-2 {
   max-width: 10em;
   min-width: 10em;
+  @media #{$mqSmallAndDown} {
+    max-width: 7em;
+    min-width: 7em;
+  }
 }
 
 .width-3 {
   max-width: 15em;
   min-width: 15em;
+  @media #{$mqSmallAndDown} {
+    max-width: 12em;
+    min-width: 12em;
+  }
 }
 
 .width-4 {
   max-width: 20em;
   min-width: 20em;
+  @media #{$mqSmallAndDown} {
+    max-width: 15em;
+    min-width: 15em;
+  }
 }
 
-.dropdown-medium {
-  font-size: 18px;
-}
-
-.input-group-medium {
-  font-size: 18px;
-}
 
 
 

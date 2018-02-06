@@ -62,6 +62,8 @@
   "Language": "Langue sélectionnée",
   "More choices will be available later: Spanish, Italian, German, Dutch, and Gaelic.": "Il y aura plus de choix plus tard: espagnol, italien, allemand, néerlandais et gaélique.",
   "For now, you can change the language from French to English here or from the top menu.": "Pour le moment, vous pouvez choisir entre le français et l'anglais ici ou dans la barre menu en haut.",
+  "You can change the unit system, colour theme or the language. Please note that if your cookies are disabled, your changes won't work. ": "Vous pouvez changer les unités, les couleurs du thème ou la langue. Merci de noter que si vous avez désactivé vos cookies, ces changements ne seront pas pris en compte. ",
+  "Learn more more about cookies.": "En savoir plus sur les cookies.",
 
 
   "It started with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm working toward a Progressive Web App and more usability testing will be done all along.":
@@ -102,7 +104,7 @@
 "Cookies policy": "Utilisation des cookies",
 "What is a cookie?": "Qu'est ce qu'un cookie ?",
 "A cookie is a small text file that’s stored on your computer or mobile device when you visit a website.": "Un cookie est un petit fichier texte créé lorsque vous visitez un site sur votre ordianteur ou votre téléphone",
-"Is there cookies on this application?": "Est ce qu'il y a des cookies sur cette application ?",
+"Is there cookies in this application?": "Est ce qu'il y a des cookies sur cette application ?",
 "Yes, I use cookies to remember your settings next time you visit:": "Oui, j'utilise des cookies pour sauvegarder vos préférences lors de votre visite",
 " - This cookie remembers that you didn't want to see the cookie notice": " - Ce cookie mémorise que vous ne vouliez pas voir le bandeau sur les cookies",
 " - This cookie remembers the language you selected at your last visit": " - Ce cookie mémorise la langue que vous avez sélectionnée lors de votre dernière visite",
@@ -111,7 +113,9 @@
 "How long are these cookies stored?": "Combien de temps les cookies sont-ils conservés ?",
 "I keep them for 30 days, after that you will need to re-select your prefered settings": "Je les conserve pendant 30 jours, ensuite, il vous faudra sélectionner de nouveau vos préférences",
 "Where can I learn more about cookies?": "Où puis en savoir plus sur les cookies ?",
-"Learn more about how to enable, delete, check and views cookies on ": "Pour en savoir plus sur l'activation, la suppression des cookies ou pour les voir ou les vérifier (en anglais) "
+"Learn more about how to enable, delete, check and views cookies on ": "Pour en savoir plus sur l'activation, la suppression des cookies ou pour les voir ou les vérifier (en anglais) ",
+"Can I use the app if my cookies are disabled?": "Est ce que je peux utiliser l'app si mes cookies sont désactivés ?",
+"Yes, but you won't be able to change the default settings for the unit, language and colour theme" : "Oui, mais vous ne pourrez pas changer les valeurs par défaut de la langue, les unités et les couleurs du thème"
 
 
 

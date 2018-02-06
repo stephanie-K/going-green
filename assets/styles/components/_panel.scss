@@ -1,11 +1,23 @@
 .panel {
     font-size: 18px;
+    @media #{$mqSmallAndDown} {
+      font-size: 16px;
+    }
+    @media #{$mqXSmallAndDown} {
+      font-size: 14px;
+    }
 }
 
 
 .panel-theme-color {
   h2 {
     font-size: 24px;
+    @media #{$mqSmallAndDown} {
+      font-size: 20px;
+    }
+    @media #{$mqXSmallAndDown} {
+      font-size: 16px;
+    }
   }
 }
 
@@ -13,10 +25,17 @@
   h2 {
     font-weight: 400;
     font-size: 30px;
+    @media #{$mqSmallAndDown} {
+      font-size: 22px;
+    }
+    @media #{$mqXSmallAndDown} {
+      font-size: 18px;
+    }
   }
 
   a {
     text-decoration: none;
   }
 }
+
 
