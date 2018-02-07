@@ -19,7 +19,6 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 **next steps:**
 - solar panel section to do
 - memorise values on index page
-- change the colour theme
 - work the email results section
 - improve accessibility
 - changes to make this a PWA
