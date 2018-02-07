@@ -1,0 +1,146 @@
+/*   ------------------------------  colour theme blue ---------------------------- */
+
+/* $mycolour-base: #4f8f00;  blue: #1377D5
+ $mycolour-secondary: #FEF3BE; // yellowish // light grey: #dddddd
+$mycolour-light: lighten($mycolour-base, 10%); #6CBB3C for green // #298fd5 for light blue
+$mycolour-dark: darken($mycolour-base, 10%);
+$white : #fff;
+$text-color : #5a5a5a ; // dark grey
+$text-color-inverted: $white; */
+
+.theme-color  {
+    color: #1377D5;
+  }
+  
+  .theme-color-inverted {
+    background-color: #1377D5;
+    color:#fff;
+  }
+  
+  .theme-color-inverted .lead {
+    font-weight: 300;
+  }
+  
+  body {
+    color: #5a5a5a ;
+    background-color: #ebebeb
+  }
+  
+  body a {
+    color: #1377D5;
+  }
+  
+  body footer a {
+    color: #fff;
+  }
+  
+  body footer a p a:hover {
+    color: #fff;
+    }
+  
+  body  p  a:hover {
+          color:#298fd5;
+  }
+  
+  /* I'm using button success as normal button - the green has been changed but will need to create a class is other themes */
+  .button-primary {
+    background-color: #1377D5 ;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .button-inverted {
+    background-color: #fff;
+    color: #1377D5 ;
+    font-weight: 400;
+  }
+  
+  /* ------------------------------------------------------------ for the panels */
+  .panel-theme-color {
+    color : #fff;
+    background-color: #1377D5;
+    font-weight: 400;
+    border: 3px solid #1377D5;
+  }
+  
+  .panel-theme-color .panel-title a:hover {
+    color: #fff;
+  }
+  
+  .panel-theme-color .panel-body {
+    color :  #5a5a5a;
+    background-color: #fff
+  }
+  
+  .panel-theme-color-inverted {
+    color :  #1377D5;
+    background-color: #fff;
+    border: 3px solid #1377D5;
+  }
+  
+  .panel-theme-color-inverted a:hover {
+      color: #1377D5;
+    }
+  .panel-theme-color-inverted .panel-body {
+    background-color: #ebebeb ;
+    border-top: 3px solid #1377D5;
+    color :  #5a5a5a;
+  }
+  .panel-theme-color-inverted .panel-body a:hover {
+    color: #fff;
+  }
+  
+  .panel-theme-color-inverted .dropdown-medium li a:hover {
+    color: #1377D5;
+    font-weight: 500;
+  }
+  
+  /* ------------------------------------------------------------ for the navbar */
+  .my-navbar {
+    color: #fff;
+    background-color: #1377D5 ;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .my-navbar a {
+      color: #fff;
+  }
+  
+  .my-navbar a.nav-menu:hover {
+    background-color: #fff;
+    color: #1377D5;
+  }
+  .my-navbar .nav-brand a:hover {
+    color: #fff;
+    background-color: #1377D5 ;
+  }
+  
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon.
+     This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+  
+  @media only screen and (max-width: 991px) {
+    #navbar.responsive a {
+      color: #fff;
+      background-color: #1377D5; /* footer background */
+      border-bottom: 1px solid #fff;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    #navbar.responsive a.nav-menu:hover {
+        background-color: #fff;
+        color: #1377D5;
+    }
+  }
+  
+/* only for the blue theme */  
+.input-group-addon {
+  background-color: #525050
+}
+  
+  
+  
+  
+  
+  
+  

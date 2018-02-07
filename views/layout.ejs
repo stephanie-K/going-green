@@ -42,12 +42,27 @@
         + Change the order of your CSS files
         + Import stylesheets from other directories
         + Use a different or additional preprocessor, like SASS, SCSS or Stylus
---
+-->
 
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/importer.css">
     <link rel="stylesheet" href="/styles/index.css">
     <!--STYLES END-->
+
+   <!-- choice of colour depending on the settings -->
+
+  <%  if (settings.selectedTheme == 'plain') { %>
+          <link rel="stylesheet" href="plain.css">
+          <% } else { %> 
+                    <%  if (settings.selectedTheme == 'blue') { %>
+                          <link rel="stylesheet" href="blue.css">
+                          <% } else { %> 
+                                    <link rel="stylesheet" href="default.css">
+                                  <% } %>
+                    <% } %>
+
+
+
   </head>
 
   <body>

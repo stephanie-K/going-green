@@ -40,7 +40,7 @@
 
   <div class="row margin-top-3">
     <div class="col-xs-offset-1">
-      <h2><%= __('Colour theme') %><span class="label label-danger" style="margin-left: 1em"><%= __('Under construction') %></span></h2>
+      <h2><%= __('Colour theme') %></h2>
     </div>
   </div>
 
@@ -48,7 +48,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
           <span class="input-group-addon">
-              <input type="radio" aria-label="default" name="theme" value="default" <% if (settings.selectedTheme === "default")  { %> checked <% } %> onclick="changeTheme("default")" disabled>
+              <input type="radio" aria-label="default" name="theme" value="default" <% if (settings.selectedTheme === "default")  { %> checked <% } %> onclick="changeTheme('default')">
           </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="default" name="theme" value="<%= __('Default (wood, green, yellow)') %>">
       </div>
@@ -59,7 +59,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
                   <span class="input-group-addon">
-                      <input type="radio" aria-label="plain" name="theme" value="plain" <% if (settings.selectedTheme === "plain")  { %> checked <% } %> onclick="changeTheme("plain")" disabled>
+                      <input type="radio" aria-label="plain" name="theme" value="plain" <% if (settings.selectedTheme === "plain")  { %> checked <% } %> onclick="changeTheme('plain')" disabled>
                   </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="plain" name="theme" value="<%= __('Plain (white, dark green, grey)') %>">
       </div>
@@ -70,7 +70,7 @@
     <div class="col-xs-5 col-xs-offset-1">
       <div class="input-group">
                   <span class="input-group-addon">
-                      <input type="radio" aria-label="blue" name="theme" value="blue" <% if (settings.selectedTheme === "blue")  { %> checked <% } %> onclick="changeTheme("blue")" disabled>
+                      <input type="radio" aria-label="blue" name="theme" value="blue" <% if (settings.selectedTheme === "blue")  { %> checked <% } %> onclick="changeTheme('blue')">
                   </span>
         <input type="text" class="form-control input-group-medium width-4" aria-label="blue" name="theme" value="<%= __('Blue (white, blue, grey)') %>">
       </div>
@@ -80,7 +80,7 @@
 
   <div class="row margin-top-3">
     <div class="col-xs-offset-1">
-      <h2><%= __('Language') %><span class="label label-danger" style="margin-left: 1em"><%= __('Under construction') %></span></h2>
+      <h2><%= __('Language') %></h2>
     </div>
   </div>
 

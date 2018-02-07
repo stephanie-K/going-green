@@ -16,7 +16,15 @@
                     <div class="panel-heading clearfix" id="heading1">
                       <h2 class="panel-title">
                           <a data-toggle="collapse" role="button"  href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <img src="images/icons/chicken-plain-green.png" class="icon-panel">
+                          <%  if (settings.selectedTheme == 'plain') { %>
+                          <img src="images/icons/hen-plain.png" class="icon-panel">
+                          <% } else { %> 
+                                    <%  if (settings.selectedTheme == 'blue') { %>
+                                          <img src="images/icons/hen-blue.png" class="icon-panel">
+                                          <% } else { %> 
+                                                    <img src="images/icons/hen-green.png" class="icon-panel">
+                                                  <% } %>
+                                    <% } %>
                             <span class="panel-theme-color-title"><%= __('Raising chickens') %></span>
                             <span class="glyphicon glyphicon-triangle-bottom to-right big-glyph" id="triangle1"></span>
                           </a>
@@ -115,7 +123,15 @@
             <div class="panel-heading clearfix" id="heading2">
               <h2 class="panel-title">
                 <a data-toggle="collapse" role="button"  href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                  <img src="images/icons/solar-panel-green.png" class="icon-panel">
+                <%  if (settings.selectedTheme == 'plain') { %>
+                  <img src="images/icons/solar-panel-plain.png" class="icon-panel">
+                  <% } else { %> 
+                            <%  if (settings.selectedTheme == 'blue') { %>
+                                  <img src="images/icons/solar-panel-blue.png" class="icon-panel">
+                                  <% } else { %> 
+                                            <img src="images/icons/solar-panel-green.png" class="icon-panel">
+                                          <% } %>
+                            <% } %>
                   <span class="panel-theme-color-title"><%= __('Solar panels') %></span>
                   <span class="glyphicon glyphicon-triangle-bottom to-right big-glyph" id="triangle2"></span>
                 </a>
@@ -152,7 +168,15 @@
             <div class="panel-heading clearfix" id="heading3">
               <h2 class="panel-title">
                 <a data-toggle="collapse" role="button"  href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                  <img src="images/icons/tap-green.png" class="icon-panel">
+                  <%  if (settings.selectedTheme == 'plain') { %>
+                  <img src="images/icons/tap-plain.png" class="icon-panel">
+                  <% } else { %> 
+                            <%  if (settings.selectedTheme == 'blue') { %>
+                                  <img src="images/icons/tap-blue.png" class="icon-panel">
+                                  <% } else { %> 
+                                            <img src="images/icons/tap-green.png" class="icon-panel">
+                                          <% } %>
+                            <% } %>
                   <span class="panel-theme-color-title"><%= __('Saving water') %></span>
                   <span class="glyphicon glyphicon-triangle-bottom to-right big-glyph" id="triangle3"></span>
                 </a>
@@ -221,7 +245,15 @@
             <div class="panel-heading clearfix" id="heading4">
               <h2 class="panel-title">
                 <a data-toggle="collapse" role="button"  href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  <img src="images/favicon-no-background.png" class="icon-panel">
+                  <%  if (settings.selectedTheme == 'plain') { %>
+                  <img src="images/icons/grow-plain.png" class="icon-panel">
+                  <% } else { %> 
+                            <%  if (settings.selectedTheme == 'blue') { %>
+                                  <img src="images/icons/grow-blue.png" class="icon-panel">
+                                  <% } else { %> 
+                                            <img src="images/icons/grow-green.png" class="icon-panel">
+                                          <% } %>
+                            <% } %>
                   <span class="panel-theme-color-title"><%= __('Grow your own') %></span>
                   <span class="glyphicon glyphicon-triangle-bottom to-right big-glyph" id="triangle4"></span>
                 </a>
@@ -247,7 +279,15 @@
             <div class="panel-heading clearfix" id="heading5">
               <h2 class="panel-title">
                 <a data-toggle="collapse" role="button"  href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                  <img src="images/icons/green-email-icon.png" class="icon-panel">
+                <%  if (settings.selectedTheme == 'plain') { %>
+                  <img src="images/icons/email-plain.png" class="icon-panel">
+                  <% } else { %> 
+                            <%  if (settings.selectedTheme == 'blue') { %>
+                                  <img src="images/icons/email-blue.png" class="icon-panel">
+                                  <% } else { %> 
+                                            <img src="images/icons/email-green.png" class="icon-panel">
+                                          <% } %>
+                            <% } %>
                   <span class="panel-theme-color-title"><%= __('Email the results') %></span>
                   <span class="glyphicon glyphicon-triangle-bottom to-right big-glyph" id="triangle5"></span>
                 </a>

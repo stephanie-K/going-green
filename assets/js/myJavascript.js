@@ -51,10 +51,8 @@ function currentLanguage() {
 }
 
 function changeLanguage() {
-  // mySettings is assigned in script tags at the bottom of navbar.ejs, that way I can pass the values of the object in PagesController to the client side
   var newLang = currentLanguage() === "en" ? "fr" : "en"; // swap the languages
   var pathname = window.location.pathname;
-  //var url = pathname + "?newLanguage=" + newLang;
   createCookie("selectedLang", newLang, 30);
   window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false; // otherwise it wasn't working on some browser, as onclick on an <a> element was returning the # instead of the URL parameter
@@ -65,31 +63,16 @@ function currentUnit() {
   return unit ? unit : "metric"
 }
 
-
-// Will be change to something that doesn't need to reload the page each time
 function changeSystem() {
-  // mySettings is assigned in script tags at the bottom of navbar.ejs, that way I can pass the values of the object in PagesController to the client side
-  //console.log (mySettings.selectedSystem);
   var newSystem = currentUnit() === "metric" ? "imperial" : "metric"; // swap the unit 
-  //var pathname = window.location.pathname;
-  //var url = pathname + "?newUnit=" + newSystem;
   createCookie("selectedUnit", newSystem, 30);
- // window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false;
 }
 
-// function currentTheme() {
-//   var theme = readCookie("selectedTheme")
-//   return theme ? theme : "default"
-// }
 
-
-//TODO
 function changeTheme(themeName) {
-var newTheme = themeName;
 var pathname = window.location.pathname;
-  //var url = pathname + "?newTheme=" + newTheme;
-  createCookie("selectedTheme", newTheme, 30);
+  createCookie("selectedTheme", themeName, 30);
   window.location.assign(pathname); // to pass the value back to the server as a URL parameter as I want to refresh the page in that case
   return false;
 }

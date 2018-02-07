@@ -7,11 +7,6 @@ $mycolour-dark: darken($mycolour-base, 10%);
 $white : #fff;
 $text-color : #5a5a5a ; // dark grey
 $text-color-inverted: $white;
-//$link-color: $mycolour-base;
-//$link-hover-color: darken($link-color, 15%);
-//$link-color-inverted: #333;
-//$link-hover-color-inverted: darken($link-color-inverted, 15%);
-
 
 
 .theme-color  {
@@ -55,16 +50,10 @@ body {
 
 
 // I'm using button success as normal button - the green has been changed but will need to create a class is other themes
-
 .button-primary {
   background-color: $mycolour-base ;
   color: $white ;
   font-weight: 400;
-
-  //a:hover, a:focus {
-  //  color: #ddd;
-  //
-  //}
 }
 
 .button-inverted {
@@ -161,6 +150,149 @@ body {
     }
   }
 }
+
+
+////////////////////////////////// CSS template for green:
+
+
+/* $mycolour-base: #4f8f00;  
+ $mycolour-secondary: #FEF3BE; // yellowish
+$mycolour-light: lighten($mycolour-base, 10%); #6CBB3C
+$mycolour-dark: darken($mycolour-base, 10%);
+$white : #fff;
+$text-color : #5a5a5a ; // dark grey
+$text-color-inverted: $white; 
+
+.theme-color  {
+  color: #4f8f00;
+}
+
+.theme-color-inverted {
+  background-color: #4f8f00;
+  color:#fff;
+}
+
+.theme-color-inverted .lead {
+  font-weight: 300;
+}
+
+body {
+  color: #5a5a5a ;
+  background-image: url('/images/backgrounds/woodBG.png'); /* add to put that URL for it to work in production 
+}
+
+body a {
+  color: #4f8f00;
+}
+
+body footer a {
+  color: #fff;
+}
+
+body footer a p a:hover {
+  color: #fff;
+  }
+
+body  p  a:hover {
+        color: #6CBB3C;
+}
+
+/* I'm using button success as normal button - the green has been changed but will need to create a class is other themes 
+.button-primary {
+  background-color: #4f8f00 ;
+  color: #fff;
+  font-weight: 400;
+}
+
+.button-inverted {
+  background-color: #fff;
+  color: #4f8f00 ;
+  font-weight: 400;
+}
+
+/* ------------------------------------------------------------ for the panels 
+.panel-theme-color {
+  color : #fff;
+  background-color: #4f8f00;
+  font-weight: 400;
+  border: 3px solid #4f8f00;
+}
+
+.panel-theme-color .panel-title a:hover {
+  color: #fff;
+}
+
+.panel-theme-color .panel-body {
+  color :  #5a5a5a;
+  background-color: #fff /* #FEF3BE  yellowish 
+}
+
+.panel-theme-color-inverted {
+  color :  #4f8f00;
+  background-color: #fff;
+  border: 3px solid #4f8f00;
+}
+
+.panel-theme-color-inverted a:hover {
+    color: #4f8f00;
+  }
+.panel-theme-color-inverted .panel-body {
+  background-color: #FEF3BE;
+  border-top: 3px solid #4f8f00;
+  color :  #5a5a5a;
+}
+.panel-theme-color-inverted .panel-body a:hover {
+  color: #fff;
+}
+
+.panel-theme-color-inverted .dropdown-medium li a:hover {
+  color: #4f8f00;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------ for the navbar 
+.my-navbar {
+  color: #fff;
+  background-color: #4f8f00 ;
+  border-bottom: 1px solid #fff;
+}
+
+.my-navbar a {
+    color: #fff;
+}
+
+.my-navbar a.nav-menu:hover {
+  background-color: #fff;
+  color: #4f8f00;
+}
+.my-navbar .nav-brand a:hover {
+  color: #fff;
+  background-color: #4f8f00 ;
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon.
+   This class makes the navbar look good on small screens (display the links vertically instead of horizontally) 
+
+@media only screen and (max-width: 991px) {
+  #navbar.responsive a {
+    color: #fff;
+    background-color: #4f8f00; /* footer background 
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #navbar.responsive a.nav-menu:hover {
+      background-color: #fff;
+      color: #4f8f00;
+  }
+}
+
+*/
+
+
+
+
 
 
 
