@@ -13,6 +13,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 05/02/18: add cookies to memorise the preferences and add a cookie policy
 
+07/02/18: add 2 more colour themes and the possibility to switch from one another - to be revisited later
+
 
 **next steps:**
 - solar panel section to do

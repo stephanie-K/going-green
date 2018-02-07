@@ -12,7 +12,11 @@
                 The Interaction Design Foundation</a></p>
         </div>
         <div class="col-md-2">
+<%  if (settings.selectedTheme == 'plain') { %>
+          <p><a href="#" style="color: #00c300;"><%= __('BACK TO TOP') %></a></p>
+          <% } else { %> 
             <p><a href="#" class="theme-color"><%= __('BACK TO TOP') %></a></p>
+            <% } %>
         </div>
     </div>
   <div class="row">
