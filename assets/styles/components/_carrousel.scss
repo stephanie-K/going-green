@@ -1,22 +1,50 @@
 /* Carousel base class */
-.carousel {
-      height: 300px;
-      /* margin-bottom: 60px; */
 
-    @media #{$mqMediumAndDown} {
-        height: 200px;
-      }
+#myCarousel { // displayed for small and extra small screens
+  display: none;
+  @media #{$mqSmallAndDown} {
+    height: 200px;
+    display: block;
+  }
+}
+#noCarousel {
 
-    @media #{$mqSmallAndDown} {
-        height: 200px;
-      }
+  @media #{$mqSmallAndDown} {
+    display: none;
+  }
 }
 
+.noCarousel { // displayed for medium and above screens
+height: 100%;
+ width: 25%;
+  //width: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  border-bottom : 1px solid #373737
+}
+
+/* .noCarousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 30px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+} */
+
+.carousel {
+      height: 200px;
+}
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
       z-index: 10;
-
       @media #{$mqMediumAndUp} {
         /* Bump up size of carousel content */
         p {
@@ -27,22 +55,11 @@
   }
 }
 
-
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 300px;
+    height: 200px;
     background-color: #777;
-
-    @media #{$mqMediumAndDown} {
-        height: 200px;
-    }
-
-
-    @media #{$mqSmallAndDown} {
-        height: 200px;
-    }
 }
-
 
 .carousel-inner > .item > img {
       position: relative;
@@ -51,16 +68,7 @@
       margin : auto;
       min-height: 100%;
       max-width: 100%;
-      height: 300px;
-
-    @media #{$mqMediumAndDown} {
-          height: 200px;
-        }
-
-    @media #{$mqSmallAndDown} {
       height: 200px;
-    }
-
 }
 
 
