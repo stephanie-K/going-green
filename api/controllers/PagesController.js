@@ -30,7 +30,6 @@ function genView(view, req, res) {
   if (req.cookies.noCookieNotice) {
     settings.noCookieNotice = req.cookies.noCookieNotice;
   }
-
   // setLocale to cookie selected language
   req.setLocale(settings.selectedLang); // overrides so update the lang attribute for the html tag
   res.view(view, {settings: settings}); 
@@ -53,7 +52,6 @@ function cookies(req, res) {
 }
 
 function settings(req, res) {
-  //updateUnit(req); 
   genView('pages/settings', req, res);
 }
 
