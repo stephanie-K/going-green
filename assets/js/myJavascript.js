@@ -43,6 +43,7 @@ function readCookie(name) {
 function eraseCookie(name) {
   createCookie(name, "", -1);
 }
+
 // ---------------------------------------------------- SETTINGS functions -----------------------------------------------------//
 
 function currentLanguage() {
@@ -89,20 +90,46 @@ const WATER_SAVED_PER_PERSON = 70;
 
 /* *********************  display of values and buttons function on the index page   **************************** */
 
-//TODO save these values before leaving the page if changes? also will be used to send email
-//TODO also save if a panel is open or close
-var valuesTable = {
+// called onload of the index page (at the moment this is in layout in the body tag, so called on any page...)
+// TODO check the open stays open even after leaving more than once... bug
+function updateIndexView(){
+  if (typeof(Storage) == "undefined") {
+    //   // Sorry! No Web Storage support..
+  } else {
+        // if no values, then initialise
+        if (!localStorage.numberHen) {
+          localStorage.numberHen = 1;
+            }
+        if(!localStorage.numberOfPerson) {
+          localStorage.numberOfPerson = 1;
+            }
+        if (!localStorage.location) {
+          localStorage.location = "Select a location";
+            }
+        // update the view from previous values in the session
+        updateHenView(localStorage.numberHen);
+        updateSolarView(localStorage.location);
+        updateWaterView(localStorage.numberOfPerson);
+        // reopen the tabs that were open before in the session
+        if (localStorage.henexpanded == 'open'){
+            document.getElementById("collapsehen").className += " in"
+            }
+        if (localStorage.solarexpanded == 'open'){
+          document.getElementById("collapsesolar").className += " in"
+          }
+        if (localStorage.waterexpanded == 'open'){
+          document.getElementById("collapsewater").className += " in"
+          }
+        if (localStorage.growexpanded == 'open'){
+          document.getElementById("collapsegrow").className += " in"
+          }
+        if (localStorage.emailexpanded == 'open'){
+          document.getElementById("collapseemail").className += " in"
+          }
+      }
+}
 
-  numberHen: 1,
-  spaceToRoam: 0,
-  spaceForCoop: 0 ,
-  totalSpace: 0,
-  numberOfEggs: 0,
-  numberOfPerson: 1,
-  waterSaved: 70,
-  location: "unknown"
 
-};
 
 /* ********************************************** CHICKEN ***************************************************** */
 //TODO error message if bad input - if enter en return close the section.... to fix
@@ -118,7 +145,7 @@ function plushen(){
   var henNb = parseInt(document.getElementById("number-of-hens").value,10);
   if (henNb < 0) { // to catch negative numbers entered by the user
     document.getElementById("number-of-hens").value = 0;
-    valuesTable.numberHen = 0;
+    localStorage.numberHen = 0;
   } else {
     henNb++ ;
     updateHenView(henNb);
@@ -130,22 +157,22 @@ function resethen(){
 } 
 
 function updateHenView(nb){
-  valuesTable.numberHen = nb;
+  localStorage.numberHen = nb;
   unitSelected = currentUnit();
   if (unitSelected === "metric") {
-     valuesTable.spaceToRoam = nb * SPACE_FOR_RUNNING_METER;
-     valuesTable.spaceForCoop = nb * SPACE_FOR_COOP_METER;
+     localStorage.spaceToRoam = nb * SPACE_FOR_RUNNING_METER;
+     localStorage.spaceForCoop = nb * SPACE_FOR_COOP_METER;
    } else {
-     valuesTable.spaceToRoam = nb * SPACE_FOR_RUNNING_FEET;
-     valuesTable.spaceForCoop = nb * SPACE_FOR_COOP_FEET;
+     localStorage.spaceToRoam = nb * SPACE_FOR_RUNNING_FEET;
+     localStorage.spaceForCoop = nb * SPACE_FOR_COOP_FEET;
    }
-  valuesTable.totalSpace = valuesTable.spaceForCoop + valuesTable.spaceToRoam;
-  valuesTable.numberOfEggs = nb * EGGS_PER_HEN;
-  document.getElementById("number-of-hens").value = valuesTable.numberHen;
-  document.getElementById("space-to-roam").innerHTML = valuesTable.spaceToRoam;
-  document.getElementById("space-for-coop").innerHTML = valuesTable.spaceForCoop;
-  document.getElementById("total-space").innerHTML = valuesTable.totalSpace;
-  document.getElementById("number-of-eggs").innerHTML = valuesTable.numberOfEggs;
+  localStorage.totalSpace = parseInt(localStorage.spaceForCoop,10) + parseInt(localStorage.spaceToRoam, 10);
+  localStorage.numberOfEggs = nb * EGGS_PER_HEN;
+  document.getElementById("number-of-hens").value = localStorage.numberHen;
+  document.getElementById("space-to-roam").innerHTML = localStorage.spaceToRoam;
+  document.getElementById("space-for-coop").innerHTML = localStorage.spaceForCoop;
+  document.getElementById("total-space").innerHTML = localStorage.totalSpace;
+  document.getElementById("number-of-eggs").innerHTML = localStorage.numberOfEggs;
 }
 
 function showLessHen () {
@@ -174,7 +201,7 @@ function plusperson(){
   var personNb = parseInt(document.getElementById("number-of-person").value,10);
   if (personNb < 1) { // to catch negative numbers entered by the user and no person 
     document.getElementById("number-of-person").value = 1;
-    valuesTable.numberOfPerson = 1;
+    localStorage.numberOfPerson = 1;
   } else {
     personNb++ ;
     updateWaterView(personNb);
@@ -186,10 +213,10 @@ function resetperson(){
 } 
 
 function updateWaterView(nb){
-  valuesTable.numberOfPerson = nb;
-  valuesTable.waterSaved = nb * WATER_SAVED_PER_PERSON;
-  document.getElementById("number-of-person").value = valuesTable.numberOfPerson;
-  document.getElementById("water-saved").innerHTML = valuesTable.waterSaved;
+  localStorage.numberOfPerson = nb;
+  localStorage.waterSaved = nb * WATER_SAVED_PER_PERSON;
+  document.getElementById("number-of-person").value = localStorage.numberOfPerson;
+  document.getElementById("water-saved").innerHTML = localStorage.waterSaved;
 }
 
 function showLessWater () {
@@ -223,7 +250,7 @@ function showMoreSolar () {
 
 function updateSolarView(loc){
   langSelected = currentLanguage();
-  valuesTable.location = loc;
+  localStorage.location = loc;
   elementSolarText = document.getElementById("solarText");
   elementSolarResult = document.getElementById("solarResult");
   elementSolarText.style = "display: block";
@@ -239,7 +266,7 @@ function updateSolarView(loc){
           break;
     case 'Wales':
           elementSolarResult.innerHTML= 3800;
-          break;
+          break;    
   }
   if (langSelected == 'fr') {
     switch(loc) {
@@ -255,9 +282,12 @@ function updateSolarView(loc){
       case 'Wales':
           document.getElementById("dropdownSolar").innerHTML = 'Pays de Galles';
           break;
+      case 'Select a location':  
+          document.getElementById("dropdownSolar").innerHTML = 'Choisir une région';
+          break;
       }
     } else {
-              document.getElementById("dropdownSolar").innerHTML = valuesTable.location;
+              document.getElementById("dropdownSolar").innerHTML = localStorage.location;
       }
 }
 

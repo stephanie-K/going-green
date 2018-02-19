@@ -65,7 +65,7 @@
 
   </head>
 
-  <body>
+  <body onload="updateIndexView()">
   <% if (!settings.noCookieNotice) { // if the user never closed the cookie notice before %>
   <div class="row">
     <div id="cookienotice"><%= __('This site uses cookies') %>
