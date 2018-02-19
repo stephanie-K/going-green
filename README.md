@@ -19,7 +19,7 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 
 **next steps:**
-- work the email results section
+- work on the email results section
 - improve accessibility
 - changes to make this a PWA
 - work on the 'Grow your own' section
