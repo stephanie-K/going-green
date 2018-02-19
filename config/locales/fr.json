@@ -26,7 +26,7 @@
   "square feet" : "pieds carré",
   "Space for the coop:" : "espace pour le poulailler :",
   "Total space needed:" : "espace total nécessaire :",
-  "Number of eggs" : "nombre d'oeufs",
+  "Number of eggs:" : "nombre d'oeufs :",
   "per week" : "par semaine",
   "Learn more": "En savoir plus",
   "See less": "Voir moins",
@@ -55,7 +55,7 @@
   "There are various ways to treat grey water, ranging from very simple methods to complex fully automated treatment systems, depending on what you want to use the water for.": 
       "Il y a différentes façons de traiter l'eau grise, allant de méthodes très simples à des méthodes complexes complètement automatisées, en fonction de l'usage que vous souhaitez faire de cette eau.",
   
-  "kWh (kilowatts hour of electricity a year would be produced by a 4kWp system.": "kWh (kilowatts heure d'électricité par an pourrait être produit par un système de 4kWp.",
+  "kWh (kilowatts hour) of electricity a year would be produced by a 4kWp system.": "kWh (kilowatts heure) d'électricité par an pourrait être produit par un système de 4kWp.",
   "The power of a solar panel (PV) cell is measured in kilowatts peak (kWp). That's the rate at which it generates energy at peak performance in full direct sunlight during the summer.":
         "La puissance d'un panneau solaire (PV) se mesure en kilowatts-crête (kWp). C'est le taux auquel le maximum d'énergie est généré en plein soleil en été.",
   "PV cells come in a variety of shapes and sizes. Most PV systems are made up of panels that fit on top of an existing roof, but you can also fit solar tiles.": 
@@ -123,7 +123,7 @@
 "If you want to receive your results via email, then you will need to entered your email address. I do not stored, or send this email address to anyone else.": 
         "Si vous souhaitez recevoir vos résultats par email, alors il vous faudra entrer votre adresse email. Elle ne sera ni conservée ni envoyée à qui que ce soit.",
 
-        
+
 "How long are these cookies stored?": "Combien de temps les cookies sont-ils conservés ?",
 "I keep them for 30 days, after that you will need to re-select your prefered settings": "Je les conserve pendant 30 jours, ensuite, il vous faudra sélectionner de nouveau vos préférences",
 "Where can I learn more about cookies?": "Où puis en savoir plus sur les cookies ?",

@@ -90,6 +90,7 @@ const WATER_SAVED_PER_PERSON = 70;
 /* *********************  display of values and buttons function on the index page   **************************** */
 
 //TODO save these values before leaving the page if changes? also will be used to send email
+//TODO also save if a panel is open or close
 var valuesTable = {
 
   numberHen: 1,
@@ -221,25 +222,45 @@ function showMoreSolar () {
 }
 
 function updateSolarView(loc){
+  langSelected = currentLanguage();
   valuesTable.location = loc;
   elementSolarText = document.getElementById("solarText");
   elementSolarResult = document.getElementById("solarResult");
-  document.getElementById("dropdownSolar").innerHTML = valuesTable.location;
   elementSolarText.style = "display: block";
-  if (loc == 'Scotland') {
-    elementSolarResult.innerHTML = 3200;
-  } else { 
-          if  (loc == 'Northern Ireland') {
-              elementSolarResult.innerHTML = 3400;
-              } else {
-                      if (loc == 'England' || loc == 'Wales') {
-                          elementSolarResult.innerHTML= 3800;
-                          } else { 
-                                  elementSolarText.style = "display: none";
-                                  }
-                      }
-        }
+  switch(loc) {
+    case 'England':
+          elementSolarResult.innerHTML= 3800;
+          break;
+    case 'Northern Ireland':
+          elementSolarResult.innerHTML = 3400;
+          break;
+    case 'Scotland':
+          elementSolarResult.innerHTML = 3200;
+          break;
+    case 'Wales':
+          elementSolarResult.innerHTML= 3800;
+          break;
+  }
+  if (langSelected == 'fr') {
+    switch(loc) {
+      case 'England':
+          document.getElementById("dropdownSolar").innerHTML = 'Angleterre';
+          break;
+      case 'Northern Ireland':
+          document.getElementById("dropdownSolar").innerHTML = 'Irlande du nord';
+          break;
+      case 'Scotland':
+          document.getElementById("dropdownSolar").innerHTML = 'Écosse';
+          break;
+      case 'Wales':
+          document.getElementById("dropdownSolar").innerHTML = 'Pays de Galles';
+          break;
+      }
+    } else {
+              document.getElementById("dropdownSolar").innerHTML = valuesTable.location;
+      }
 }
+
 
 /* ************************************************* Grow Your Own **************************************************** */
 
