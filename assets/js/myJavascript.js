@@ -1,5 +1,5 @@
 /**
- * Created by ninie on 07/01/2018.
+ * Created by Stéphanie on 07/01/2018.
  */
 
 
@@ -7,7 +7,7 @@
 function displayVerticalMenu() {
   $("#navbar").toggleClass("responsive")
 }
-// ---------------------------------------------------- COOKIES -----------------------------------------------------//
+// ---------------------------------------------------- COOKIES functions (used for settings ) -----------------------------------------------------//
 
 function cookieNoticeClose() {
   $("#cookienotice").hide();
@@ -43,7 +43,7 @@ function readCookie(name) {
 function eraseCookie(name) {
   createCookie(name, "", -1);
 }
-// ---------------------------------------------------- SETTINGS -----------------------------------------------------//
+// ---------------------------------------------------- SETTINGS functions -----------------------------------------------------//
 
 function currentLanguage() {
   var lang = readCookie("selectedLang")
@@ -79,7 +79,7 @@ var pathname = window.location.pathname;
 
 
 
-// --------------------------------------------------  INDEX  ----------------------------------------------------- //
+// --------------------------------------------------  INDEX  PAGE ----------------------------------------------------- //
 const SPACE_FOR_COOP_FEET = 4;
 const SPACE_FOR_RUNNING_FEET = 10;
 const SPACE_FOR_COOP_METER = 0.5;
@@ -103,7 +103,7 @@ var valuesTable = {
 
 };
 
-/* ******************** chickens *******************************/
+/* ********************************************** CHICKEN ***************************************************** */
 //TODO error message if bad input - if enter en return close the section.... to fix
 function minushen(){
   var henNb = parseInt(document.getElementById("number-of-hens").value,10);
@@ -160,7 +160,7 @@ function showMoreHen () {
   elementMore.style = "display: block";
   elementLess.style = "display: none";
 }
-/* ******************** water *******************************/
+/* ************************************************* WATER **************************************************** */
 function minusperson(){
   var personNb = parseInt(document.getElementById("number-of-person").value,10);
   if (personNb >= 2) {
@@ -204,3 +204,44 @@ function showMoreWater () {
   elementMore.style = "display: block";
   elementLess.style = "display: none";
 }
+
+/* ************************************************* SOLAR PANELS **************************************************** */
+function showLessSolar () {
+  elementMore = document.getElementById("more-solar");
+  elementLess = document.getElementById("less-solar");
+  elementMore.style = "display: none";
+  elementLess.style = "display: block";
+}
+
+function showMoreSolar () {
+  elementMore = document.getElementById("more-solar");
+  elementLess = document.getElementById("less-solar");
+  elementMore.style = "display: block";
+  elementLess.style = "display: none";
+}
+
+function updateSolarView(loc){
+  valuesTable.location = loc;
+  elementSolarText = document.getElementById("solarText");
+  elementSolarResult = document.getElementById("solarResult");
+  document.getElementById("dropdownSolar").innerHTML = valuesTable.location;
+  elementSolarText.style = "display: block";
+  if (loc == 'Scotland') {
+    elementSolarResult.innerHTML = 3200;
+  } else { 
+          if  (loc == 'Northern Ireland') {
+              elementSolarResult.innerHTML = 3400;
+              } else {
+                      if (loc == 'England' || loc == 'Wales') {
+                          elementSolarResult.innerHTML= 3800;
+                          } else { 
+                                  elementSolarText.style = "display: none";
+                                  }
+                      }
+        }
+}
+
+/* ************************************************* Grow Your Own **************************************************** */
+
+
+/* ************************************************* Email the results ************************************************** */
