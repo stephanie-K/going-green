@@ -15,10 +15,10 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 07/02/18: add 2 more colour themes and the possibility to switch from one another - to be revisited later
 
+19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?)
+
 
 **next steps:**
-- solar panel section to do
-- memorise values on index page
 - work the email results section
 - improve accessibility
 - changes to make this a PWA
