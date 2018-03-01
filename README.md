@@ -17,6 +17,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?)
 
+26/02/18: add new wireframes
+
 
 **next steps:**
 - work on the email results section
