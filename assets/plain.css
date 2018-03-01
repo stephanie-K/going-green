@@ -96,6 +96,10 @@ body footer a p a{
   .panel-theme-color-inverted .panel-body a:hover {
     color: #fff;
   }
+
+  #link-normal-colour:hover{
+    color: #254400
+  }
   
   .panel-theme-color-inverted .dropdown-medium li a:hover {
     color: #00c300;

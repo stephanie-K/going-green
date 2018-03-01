@@ -87,7 +87,11 @@ body  p  a:hover {
   color :  #5a5a5a;
 }
 .panel-theme-color-inverted .panel-body a:hover {
-  color: #6CBB3C;
+  color: #fff;
+}
+
+#link-normal-colour:hover{
+  color: #6CBB3C
 }
 
 .panel-theme-color-inverted .dropdown-medium li a:hover {

@@ -91,7 +91,8 @@ const WATER_SAVED_PER_PERSON = 70;
 /* *********************  display of values and buttons function on the index page   **************************** */
 
 // called onload of the index page (at the moment this is in layout in the body tag, so called on any page...)
-// TODO check the open stays open even after leaving more than once... bug
+// TODO check the open stays open even after leaving more than once... bug to fix
+// TODO handle no local storage available (cookies? or else)
 function updateIndexView(){
   if (typeof(Storage) == "undefined") {
     //   // Sorry! No Web Storage support..
@@ -132,7 +133,7 @@ function updateIndexView(){
 
 
 /* ********************************************** CHICKEN ***************************************************** */
-//TODO error message if bad input - if enter en return close the section.... to fix
+//TODO error message if bad input - if press 'enter' this closes the section.... to fix
 function minushen(){
   var henNb = parseInt(document.getElementById("number-of-hens").value,10);
   if (henNb >= 1) {

@@ -294,14 +294,24 @@
 
             <div id="collapsegrow" class="panel-collapse collapse" aria-labelledby="heading4">
               <div class="panel-body">
+                <div class="row">
+                  <h3 class="margin-3 text-center"><%= __('General advice') %></h3>
+                    <ul>
+                        <li><%= __("if you’re a beginner, start with veg plants rather than sowing seeds") %></li>
+                        <li class="margin-top-1"><%= __("successful gardens need at least 5 hours of full sun a day") %></li>
+                        <li class="margin-top-1"><%= __("if your garden is small, reduce the distances given on seeds packets") %></li>
+                        <li class="margin-top-1"><%= __("use different spaces: walls for climbers, shed roof for squash, pots, hanging baskets, tubs or strawbales") %></li>
+                    </ul>
+                </div>
                 <div class="row col-xs-offset-1">
                   <div class="row margin-bottom-2">
+                 
                     <h3><span class="label label-danger "><%= __('Coming soon') %></span></h3>
                   </div>
                   <div class="row">
-                    <p><%=  __('Various starter crops with advices:') %></p>
+                    <p><%=  __('Various starter crops with advice:') %></p>
                     <p><%=  __('Beans, carrots, cucumbers, peas, potatoes, pumpicks, rhubarb, strawberries, and tomatoes.') %></p>
-                    <p><a href="images/docs/Home-Grow-alternative-navigation.pdf" target="_blank">Possible design for 'Grow your own' (2018)</a></p>
+                    <p><a id="link-normal-colour"href="images/docs/Home-Grow-alternative-navigation.pdf" target="_blank"><%= __("View a possible design for 'Grow your own' (2018)") %></a></p>
 
                   </div>
                 </div>
