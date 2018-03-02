@@ -133,20 +133,21 @@ function updateIndexView(){
 
 
 /* ********************************************** CHICKEN ***************************************************** */
-//TODO error message if bad input - if press 'enter' this closes the section.... to fix
+//TODO error message if bad input (Usability testing needed for this) - if press 'enter' this closes the section.... to fix
 function minushen(){
   var henNb = parseInt(document.getElementById("number-of-hens").value,10);
-  if (henNb >= 1) {
+  if (henNb >= 2) { // can't become less than 1 - the default value
     henNb-- ;
     updateHenView (henNb)
   } 
 }
 
+//TODO error message if bad input (Usability testing needed for this)
 function plushen(){
   var henNb = parseInt(document.getElementById("number-of-hens").value,10);
   if (henNb < 0) { // to catch negative numbers entered by the user
-    document.getElementById("number-of-hens").value = 0;
-    localStorage.numberHen = 0;
+    document.getElementById("number-of-hens").value = 1;
+    localStorage.numberHen = 1;
   } else {
     henNb++ ;
     updateHenView(henNb);
@@ -154,7 +155,7 @@ function plushen(){
 }
 
 function resethen(){
-  updateHenView(0);
+  updateHenView(1);// that's the default value
 } 
 
 function updateHenView(nb){
@@ -190,14 +191,17 @@ function showMoreHen () {
   elementLess.style = "display: none";
 }
 /* ************************************************* WATER **************************************************** */
+
+//TODO error message if bad input (Usability testing needed for this) - if press 'enter' this closes the section.... to fix
 function minusperson(){
   var personNb = parseInt(document.getElementById("number-of-person").value,10);
-  if (personNb >= 2) {
+  if (personNb >= 2) { // can't become less than 1 - the default value
     personNb-- ;
     updateWaterView (personNb)
   } 
 }
 
+//TODO error message if bad input (Usability testing needed for this)
 function plusperson(){
   var personNb = parseInt(document.getElementById("number-of-person").value,10);
   if (personNb < 1) { // to catch negative numbers entered by the user and no person 

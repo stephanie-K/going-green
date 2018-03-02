@@ -17,15 +17,15 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?)
 
-26/02/18: add new wireframes
+02/03/18: add new wireframes
 
 
 **next steps:**
-- work on the email results section
-- improve error handling
 - improve accessibility
-- changes to make this a PWA
+- work on the email results section
 - work on the 'Grow your own' section
+- improve error handling if needed (following usability testing)
+- changes to make this a PWA
 - add more languages
 
 
