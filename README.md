@@ -15,13 +15,14 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 07/02/18: add 2 more colour themes and the possibility to switch from one another - to be revisited later
 
-19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?)
+19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?) - to fix
 
 02/03/18: add new wireframes
 
+04/03/18: improved accessibility after checking with WAVE, and tab navigation - add a skip content option
+
 
 **next steps:**
-- improve accessibility
 - work on the email results section
 - work on the 'Grow your own' section
 - improve error handling if needed (following usability testing)

@@ -1,31 +1,32 @@
 <% title = 'Cookies' %>
 <%- include ../partials/navbar %>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="margin-3 text-center"><%= __('Cookies policy') %></h1>
+<!-- for accessibility if a user is tabbing through and want to get to the content directly the main tab with id content is where the user would skip to -->
+<main id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="margin-3 text-center"><%= __('Cookies policy') %></h1>
 
-<h3 class="theme-color margin-top-3"><%= __('What is a cookie?') %></h3>
-<p><%= __("A cookie is a small text file that’s stored on your computer or mobile device when you visit a website.") %></p>
+        <h3 class="theme-color margin-top-3"><%= __('What is a cookie?') %></h3>
+        <p><%= __("A cookie is a small text file that’s stored on your computer or mobile device when you visit a website.") %></p>
 
-<h3 class="theme-color margin-top-3"><%= __('Is there cookies in this application?') %></h3>
-<p><%= __('Yes, I use cookies to remember your settings next time you visit: language, unit and colour theme.') %></p>
-<p><%= __('I also use them to save the values you entered while changing the number of hens, location or crops selected for example.') %></p>
-<p><%= __('If you want to receive your results via email, then you will need to entered your email address. I do not stored, or send this email address to anyone else.') %></p>
-
-
-<h3 class="theme-color margin-top-3"><%= __('How long are these cookies stored?') %></h3>
-<p><%= __('I keep them for 30 days, after that you will need to re-select your prefered settings.') %></p>
-
-<h3 class="theme-color margin-top-3"><%= __('Can I use the app if my cookies are disabled?') %></h3>
-<p><%= __("Yes, but you won't be able to change the default settings for the unit, language and colour theme.") %></p>
+        <h3 class="theme-color margin-top-3"><%= __('Is there cookies in this application?') %></h3>
+        <p><%= __('Yes, I use cookies to remember your settings next time you visit: language, unit and colour theme.') %></p>
+        <p><%= __('I also use them to save the values you entered while changing the number of hens, location or crops selected for example.') %></p>
+        <p><%= __('If you want to receive your results via email, then you will need to entered your email address. I do not stored, or send this email address to anyone else.') %></p>
 
 
-<h3 class="theme-color margin-top-3"><%= __('Where can I learn more about cookies?') %></h3>
-<p><%= __('Learn more about how to enable, delete, check and views cookies on ') %><a href="http://www.whatarecookies.com/" target="_blank" >http://www.whatarecookies.com/</a></p>
+        <h3 class="theme-color margin-top-3"><%= __('How long are these cookies stored?') %></h3>
+        <p><%= __('I keep them for 30 days, after that you will need to re-select your prefered settings.') %></p>
 
+        <h3 class="theme-color margin-top-3"><%= __('Can I use the app if my cookies are disabled?') %></h3>
+        <p><%= __("Yes, but you won't be able to change the default settings for the unit, language and colour theme.") %></p>
+
+
+        <h3 class="theme-color margin-top-3"><%= __('Where can I learn more about cookies?') %></h3>
+        <p><%= __('Learn more about how to enable, delete, check and views cookies on ') %><a href="http://www.whatarecookies.com/" target="_blank" >http://www.whatarecookies.com/</a></p>
+
+      </div>
     </div>
   </div>
-  </div>
-
-<%- include ../partials/footer %>
+</main>

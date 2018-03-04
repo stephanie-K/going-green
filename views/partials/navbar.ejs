@@ -1,4 +1,13 @@
+
 <div class="my-navbar">
+
+  <!-- for accessibility if a user is tabbing through and want to get to the content directly -->
+  <div id="skiplink-container">
+    <div>
+      <a href="#content" class="skiplink">Skip to main content</a>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
 
@@ -27,9 +36,9 @@
 
           <a href="#" class="nav-menu" onclick="changeLanguage()">
               <% if (settings.selectedLang === 'en') { %>
-                  <img class="icon-flag" src="images/flag-french.jpg">français</a>
+                  <img class="icon-flag" src="images/flag-french.jpg" alt="French flag icon" >français</a>
                   <% } else { %>
-                  <img class="icon-flag" src="images/flag-english.jpg">English</a>
+                  <img class="icon-flag" src="images/flag-english.jpg" alt="British flag icon">English</a>
                   <% } %>
       </div>
     </div>
