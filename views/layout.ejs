@@ -60,12 +60,13 @@
                                     <link rel="stylesheet" href="default.css">
                                   <% } %>
                     <% } %>
-
-
-
   </head>
 
+<% if (typeof title !== undefined && title == 'Home') { %>
   <body onload="updateIndexView()">
+   <% } else { %> 
+   <body>
+          <% } %>
       <% if (!settings.noCookieNotice) { // if the user never closed the cookie notice before then display it %>
       <div class="row">
         <div id="cookienotice"><%= __('This site uses cookies') %>
