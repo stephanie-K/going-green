@@ -113,8 +113,8 @@ function updateIndexView(){
         updateWaterView(localStorage.numberOfPerson);
         // reopen the tabs that were open before in the session
         if (localStorage.henexpanded == 'open'){
-            document.getElementById("collapsehen").className += " in"
-            }
+          document.getElementById("collapsehen").className += " in"
+          }
         if (localStorage.solarexpanded == 'open'){
           document.getElementById("collapsesolar").className += " in"
           }
@@ -258,21 +258,25 @@ function updateSolarView(loc){
   localStorage.location = loc;
   elementSolarText = document.getElementById("solarText");
   elementSolarResult = document.getElementById("solarResult");
-  elementSolarText.style = "display: block";
-  switch(loc) {
-    case 'England':
-          elementSolarResult.innerHTML= 3800;
-          break;
-    case 'Northern Ireland':
-          elementSolarResult.innerHTML = 3400;
-          break;
-    case 'Scotland':
-          elementSolarResult.innerHTML = 3200;
-          break;
-    case 'Wales':
-          elementSolarResult.innerHTML= 3800;
-          break;    
+
+  if (loc !== 'Select a location') {
+    elementSolarText.style = "display: block";
+    switch(loc) {
+      case 'England':
+            elementSolarResult.innerHTML= 3800;
+            break;
+      case 'Northern Ireland':
+            elementSolarResult.innerHTML = 3400;
+            break;
+      case 'Scotland':
+            elementSolarResult.innerHTML = 3200;
+            break;
+      case 'Wales':
+            elementSolarResult.innerHTML= 3800;
+            break;    
+    }
   }
+  
   if (langSelected == 'fr') {
     switch(loc) {
       case 'England':

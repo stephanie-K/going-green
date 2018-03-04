@@ -15,7 +15,7 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 07/02/18: add 2 more colour themes and the possibility to switch from one another - to be revisited later
 
-19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload but only once (?) - to fix
+19/02/18: add solar panel section - save values on index page in local storage - save open panels onbeforeunload 
 
 02/03/18: add new wireframes
 
