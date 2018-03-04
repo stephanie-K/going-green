@@ -27,6 +27,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 - improve error handling if needed (following usability testing)
 - changes to make this a PWA
 - add more languages
+- look at detecting the location on mobile instead of the user having to select it
+- use the location to provide more accurate data for water and solar section (expand to EU, not just UK)
 
 
 ---
