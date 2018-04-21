@@ -1,7 +1,7 @@
 
 # Going green
 This is a personal project. 
-I'm designing an application to help exploring various possibilities when you are planning green changes in your house or garden.
+I'm designing a responsive website to help exploring various possibilities when you are planning green changes in your house or garden.
 This is to get a better idea of what to expect, and decide if these changes are worth doing without checking various sources of information, as it would all be in one place.
 
 To visit the website under construction: http://going-green.chezleskrus.com/
@@ -26,10 +26,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 - work on the email results section
 - work on the 'Grow your own' section
 - improve error handling if needed (following usability testing)
-- changes to make this a PWA
 - add more languages
-- look at detecting the location on mobile instead of the user having to select it
-- use the location to provide more accurate data for water and solar section (expand to EU, not just UK)
+
 
 
 ---
@@ -37,9 +35,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 ## Design goals
 - Ease of use for expert users but also for users with little experience of apps
 - Give a green feel visual, but still accommodate colour-blind users
-- Start with UK users but extends further with wider geographical data
-- Choice of French or English
-- Responsive application so you can use it on a mobile or a desktop
+- Choice of French or English - and more
+- Responsive website so you can use it on a mobile or a desktop
 
 ---
 
@@ -48,14 +45,6 @@ I'm using [**Bootstrap**](https://getbootstrap.com/docs/3.3/getting-started/) an
 
 
 The various components will be adapted so they look as good as possible on various screens sizes.
-If a GPS is available on the device then it could be used to calculate the potential amount of solar energy according to the location.
-
-
-This will be a [Progressive Wep App](https://developers.google.com/web/progressive-web-apps/):
-
-- Reliable - Load instantly and never show the downasaur, even in uncertain network conditions
-- Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling
-- Engaging - Feel like a natural app on the device, with an immersive user experience
 
 
 This is using [Node.js](https://nodejs.org/en/), [EJS](http://www.ejs.co/), [Sails](https://sailsjs.com/get-started), [SASS](https://github.com/twbs/bootstrap-sass#d-npm--nodejs), [LESS](https://getbootstrap.com/2.0.4/less.html).

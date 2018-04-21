@@ -89,13 +89,12 @@
 
 
 
-  "It started with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm working toward a Progressive Web App and more usability testing will be done all along.":
-      "J'ai commencé avec une app pour appareils android et un groupe de 5 utilisateurs débutants ou moyens au niveau de leur connaissance des apps. Maintenant, je prévois de faire une Progressive Web App et des tests d'ergonomie seront faits régulièrement.",
-  "Responsive application": "Une application responsive",
+  "It started in 2016 with a mobile app made for Android devices with a user group of 5 with low to medium IT skills. Now I'm working toward a responsive website and more usability testing will be done.":
+      "J'ai commencé en 2016 avec une app pour appareils android et un groupe de 5 utilisateurs débutants ou moyens au niveau de leur connaissance des apps. Maintenant, je prévois de faire unsite web responsif et des tests d'ergonomie seront faits régulièrement.",
+  "Responsive website": "Un site web responsif",
   "Give a green feel visual, but still accommodate colour-blind users": "Donner un visuel 'vert' qui ne gêne pas les utilisateurs daltoniens",
   "Choice of language":"Choix de la langue",
   "Ease of use for expert users but also for users with little experience of apps":"Facilité d'utilisation pour les utilisateurs d'app experts mais aussi pour les débutants",
-  "Start with UK users but extends further with wider geographical data":"Commencer avec les utilisateurs au Royaume Uni puis étendre au delà de cette zone géographique",
   "Source of information used":"Les sources d'informations utilisées",
   "Design plan": "Planning du design",
  
@@ -104,23 +103,23 @@
   "Previous": "Précédent",
   "Next": "Suivant",
   "Want to do some green changes, but unsure where to begin?": "Vous voulez faire des changements écologiques, mais vous ne savez pas par où commencer ?",
-  "I'm designing an application to help exploring various possibilities, so you get a better idea of what to expect, and decide if these changes are worth doing without checking various sources of information, as it would all be in one place.": 
-      "Je construis une app pour vous aider à explorer les différentes possibilités, pour avoir une meilleure idée de ce que cela peut donner et ainsi décider de le faire ou non sans avoir à chercher sur plusieurs sites puisque tout sera à un seul endroit.",
-  "GO TO THE APP": "ALLER VOIR L'APP",
+  "I'm designing a website to help exploring various possibilities, so you get a better idea of what to expect, and decide if these changes are worth doing without checking various sources of information, as it would all be in one place.": 
+      "Je construis un site pour vous aider à explorer les différentes possibilités, pour avoir une meilleure idée de ce que cela peut donner et ainsi décider de le faire ou non sans avoir à chercher sur plusieurs sites puisque tout sera à un seul endroit.",
+  "START": "COMMENCER",
   "Design goals": "Les contraintes du design",
-  "Choice of French or English": "Choix de la langue, anglais ou français",
-  "Responsive application so you can use it on a mobile or a desktop": "Application responsive, utilisable sur ordinateur ou sur mobile",
+  "Choice of French or English - more languages later": "Choix de la langue, anglais ou français - plus de langues plus tard",
+  "Responsive website so you can use it on a mobile or a desktop": "Un site web responsif, utilisable sur ordinateur ou sur mobile",
   "LEARN MORE": "EN SAVOIR PLUS",
   "How this project started": "Comment ce projet a commencé",
   "The initial work started in 2016 as an IT degree project. The user research, design and first prototype were done between February and June. There was no coding involved as the focus was the design. " :
       "Cela a débuté en 2016 en tant que mémoire de maitrise d'informatique. La recherche, le design et le premier prototype ont été faits entre février et juin. Il n'y a pas eu d'écriture de code car l'aspect principal était le design. ",
   " was used to create the mobile app for Android and I received the ": " a été utilisé pour créer une app pour Android et j'ai reçu un prix pour la ",
   " in June 2016 for it.": " en juin 2016.",
-  "After learning more about permaculture, frontend development and UX design, I decided to explore this further and to design a Progressive Web Application.": "Depuis j'ai beaucoup appris sur la permaculture, le développement Front-End et le design. J'ai décidé de pousser le projet un peu plus loin et de développer une application Web progressive.",
+  "After learning more about permaculture, frontend development and UX design, I decided to explore this further.": "Depuis j'ai beaucoup appris sur la permaculture, le développement Front-End et le design. J'ai décidé de pousser le projet un peu plus loin.",
   "Download the 2016 prototype for Android devices" : "Télécharger le prototype de 2016 pour appareils Android (en anglais)",
   "About me": "À propos de moi",
-  "I'm a software developer exploring UX design and living in Ayrshire, Scotland. I want to promote better uses of natural resources, and permaculture as an intelligent design, which meet human needs whilst enhancing biodiversity, and reducing our impact on the planet.":
-     "Je suis une développeuse de logiciels qui explore les aspects du design et des interactions avec l'utilisateur. Je vis en Ayrshire en Écosse. Je souhaite promouvoir un meilleur usage des ressources naturelles, et la permaculture qui permet de subvenir à nos besoins tout en favorisant la biodiversité et en réduisant notre impact sur la planète.",
+  "I'm a web developer exploring UX design and living in Ayrshire, Scotland. I want to promote better uses of natural resources, and permaculture as an intelligent design, which meet human needs whilst enhancing biodiversity, and reducing our impact on the planet.":
+     "Je suis une développeuse qui explore les aspects du design et des interactions avec l'utilisateur. Je vis en Ayrshire en Écosse. Je souhaite promouvoir un meilleur usage des ressources naturelles, et la permaculture qui permet de subvenir à nos besoins tout en favorisant la biodiversité et en réduisant notre impact sur la planète.",
 
 
 
