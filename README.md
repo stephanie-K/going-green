@@ -21,6 +21,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 04/03/18: improved accessibility after checking with WAVE, and tab navigation - add a skip content option
 
+19/06/18: improved accessiblity after chrome dev tool audit, improve footer, and review design plan
+
 
 **next steps:**
 - prototype a different navigation to replace the 'Hamburger menu' on small screens by tab bars
