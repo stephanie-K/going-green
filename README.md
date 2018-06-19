@@ -23,6 +23,7 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 
 **next steps:**
+- prototype a different navigation to replace the 'Hamburger menu' on small screens by tab bars
 - organise user research to assess the actual design and user needs (navigation - Grow and email sections)
 - improve navigation
 - work on the email results section
