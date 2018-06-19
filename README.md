@@ -23,6 +23,8 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 
 
 **next steps:**
+- organise user research to assess the actual design and user needs (navigation - Grow and email sections)
+- improve navigation
 - work on the email results section
 - work on the 'Grow your own' section
 - improve error handling if needed (following usability testing)

@@ -38,7 +38,7 @@ $text-color-inverted: $white; */
     color: #fff;
     }
   
-  body  p  a:hover {
+  body a:hover {
           color:#298fd5;
   }
   

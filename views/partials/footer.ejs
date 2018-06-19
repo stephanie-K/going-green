@@ -3,13 +3,10 @@
         <div class="col-md-3">
             <p>&copy; 2018 Stéphanie Krus</p>
         </div>
-        <div class="col-md-2">
-            <p><a href="https://www.linkedin.com/in/stephanie-krus/" target="_blank" rel="noopener"><img class="icon" src="images/icons/linkedIn-icon.jpg" alt="LinkedIn icon">
-                LinkedIn</a></p>
-        </div>
-        <div class="col-md-5">
-            <p><a href="https://www.interaction-design.org/stephanie-krus" target="_blank" rel="noopener"><img class="icon" src="images/icons/IDFlogo.png" alt="Interaction Design Foundation icon">
-                The Interaction Design Foundation</a></p>
+        <div class="col-md-7">
+            <a href="https://www.linkedin.com/in/stephanie-krus/" target="_blank" rel="noopener" title="go to my linked profile page"><img class="icon" src="images/icons/linkedIn-icon.jpg" alt="LinkedIn icon" ></a>
+            <a href="https://www.interaction-design.org/stephanie-krus" target="_blank" rel="noopener" title="go to my Interaction Design Foundation profile page"><img class="icon" src="images/icons/IDFlogo.png" alt="Interaction Design Foundation icon"></a>
+            <a href="mailto:french@chezleskrus.com?Subject=Going%20Green%20-%20contact" target="_blank" rel="noopener" title="send me an email"><img class="icon-big" src="images/icons/email-icon-white.png" alt ="envelop icon"><%= __('Contact me') %></a>
         </div>
         <div class="col-md-2">
 <%  if (settings.selectedTheme == 'plain') { %>
@@ -18,11 +15,6 @@
             <p><a href="#" class="theme-color"><%= __('BACK TO TOP') %></a></p>
             <% } %>
         </div>
-    </div>
-  <div class="row">
-    <div class="col-md-3">
-      <p><a href="mailto:french@chezleskrus.com?Subject=Going%20Green%20-%20contact" target="_blank" rel="noopener"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <%= __('Contact me') %></a></p>
-    </div>
     </div>
 </footer>
 
