@@ -87,10 +87,6 @@ $text-color-inverted: $white; */
     color :  #5a5a5a;
   }
   .panel-theme-color-inverted .panel-body a:hover {
-    color: #fff
-  }
-  
-  #link-normal-colour:hover{
     color: #298fd5
   }
 

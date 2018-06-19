@@ -86,7 +86,7 @@ body footer a p a{
   }
   
   .panel-theme-color-inverted a:hover {
-     /*  color: #00c300; */
+       color: #254400; 
     }
   .panel-theme-color-inverted .panel-body {
     background-color: #ebebeb ;
@@ -94,10 +94,6 @@ body footer a p a{
     color :  #5a5a5a;
   }
   .panel-theme-color-inverted .panel-body a:hover {
-    color: #fff;
-  }
-
-  #link-normal-colour:hover{
     color: #254400
   }
   
