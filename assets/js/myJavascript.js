@@ -91,11 +91,10 @@ const WATER_SAVED_PER_PERSON = 70;
 /* *********************  display of values and buttons function on the index page   **************************** */
 
 // called onload of the index page (at the moment this is in layout in the body tag, so called on any page...)
-// TODO check the open stays open even after leaving more than once... bug to fix
 // TODO handle no local storage available (cookies? or else)
 function updateIndexView(){
   if (typeof(Storage) == "undefined") {
-    //   // Sorry! No Web Storage support..
+    //   TODO Sorry! No Web Storage support..
   } else {
         // if no values, then initialise
         if (!localStorage.numberHen) {
@@ -113,19 +112,19 @@ function updateIndexView(){
         updateWaterView(localStorage.numberOfPerson);
         // reopen the tabs that were open before in the session
         if (localStorage.henexpanded == 'open'){
-          document.getElementById("collapsehen").className += " in"
+          $('#collapsehen').addClass('in');
           }
         if (localStorage.solarexpanded == 'open'){
-          document.getElementById("collapsesolar").className += " in"
+          $('#collapsesolar').addClass('in');
           }
         if (localStorage.waterexpanded == 'open'){
-          document.getElementById("collapsewater").className += " in"
+          $('#collapsewater').addClass('in');
           }
         if (localStorage.growexpanded == 'open'){
-          document.getElementById("collapsegrow").className += " in"
+          $('#collapsegrow').addClass('in');
           }
         if (localStorage.emailexpanded == 'open'){
-          document.getElementById("collapseemail").className += " in"
+          $('#collapseemail').addClass('in');
           }
       }
 }
@@ -170,7 +169,7 @@ function updateHenView(nb){
    }
   localStorage.totalSpace = parseInt(localStorage.spaceForCoop,10) + parseInt(localStorage.spaceToRoam, 10);
   localStorage.numberOfEggs = nb * EGGS_PER_HEN;
-  document.getElementById("number-of-hens").value = localStorage.numberHen;
+  $('#number-of-hens').val(localStorage.numberHen);
   document.getElementById("space-to-roam").innerHTML = localStorage.spaceToRoam;
   document.getElementById("space-for-coop").innerHTML = localStorage.spaceForCoop;
   document.getElementById("total-space").innerHTML = localStorage.totalSpace;
@@ -178,17 +177,14 @@ function updateHenView(nb){
 }
 
 function showLessHen () {
-  elementMore = document.getElementById("more-hen");
-  elementLess = document.getElementById("less-hen");
-  elementMore.style = "display: none";
-  elementLess.style = "display: block";
+  $('#more-hen').hide();
+  $('#less-hen').show();
 }
 
 function showMoreHen () {
-  elementMore = document.getElementById("more-hen");
-  elementLess = document.getElementById("less-hen");
-  elementMore.style = "display: block";
-  elementLess.style = "display: none";
+  $('#more-hen').show();
+  $('#less-hen').hide();
+
 }
 /* ************************************************* WATER **************************************************** */
 
@@ -225,42 +221,33 @@ function updateWaterView(nb){
 }
 
 function showLessWater () {
-  elementMore = document.getElementById("more-water");
-  elementLess = document.getElementById("less-water");
-  elementMore.style = "display: none";
-  elementLess.style = "display: block";
+  $('#more-water').hide();
+  $('#less-water').show();
 }
 
 function showMoreWater () {
-  elementMore = document.getElementById("more-water");
-  elementLess = document.getElementById("less-water");
-  elementMore.style = "display: block";
-  elementLess.style = "display: none";
+  $('#more-water').show();
+  $('#less-water').hide();
 }
 
 /* ************************************************* SOLAR PANELS **************************************************** */
 function showLessSolar () {
-  elementMore = document.getElementById("more-solar");
-  elementLess = document.getElementById("less-solar");
-  elementMore.style = "display: none";
-  elementLess.style = "display: block";
+  $('#more-solar').hide();
+  $('#less-solar').show();
 }
 
 function showMoreSolar () {
-  elementMore = document.getElementById("more-solar");
-  elementLess = document.getElementById("less-solar");
-  elementMore.style = "display: block";
-  elementLess.style = "display: none";
+  $('#more-solar').show();
+  $('#less-solar').hide();
 }
 
 function updateSolarView(loc){
   langSelected = currentLanguage();
   localStorage.location = loc;
-  elementSolarText = document.getElementById("solarText");
   elementSolarResult = document.getElementById("solarResult");
 
   if (loc !== 'Select a location') {
-    elementSolarText.style = "display: block";
+    $('#solarText').show();
     switch(loc) {
       case 'England':
             elementSolarResult.innerHTML= 3800;

@@ -49,6 +49,7 @@ body a:hover {
   font-weight: 400;
 }
 
+
 .button-inverted {
   background-color: #fff;
   color: #4f8f00 ;
@@ -84,10 +85,10 @@ body a:hover {
 .panel-theme-color-inverted .panel-body {
   background-color: #FEF3BE;
   border-top: 3px solid #4f8f00;
-  color :  #5a5a5a;
+  color :  #373737;
 }
 .panel-theme-color-inverted .panel-body a:hover {
-  color: #6CBB3C;
+  color: #0b0c0c;
 }
 
 .panel-theme-color-inverted .dropdown-medium li a:hover {

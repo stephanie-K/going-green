@@ -87,7 +87,7 @@ $text-color-inverted: $white; */
     color :  #5a5a5a;
   }
   .panel-theme-color-inverted .panel-body a:hover {
-    color: #298fd5
+    color: #0b0c0c
   }
 
   .panel-theme-color-inverted .dropdown-medium li a:hover {
