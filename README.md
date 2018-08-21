@@ -34,6 +34,7 @@ To visit the website under construction: http://going-green.chezleskrus.com/
 - add more languages
 
 
+**This project is on hold at the moment as I would need to do some User Research before going further**
 
 ---
 
