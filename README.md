@@ -6,6 +6,9 @@ This is to get a better idea of what to expect, and decide if these changes are 
 
 To visit the website under construction: http://going-green.chezleskrus.com/
 
+![An animation of the homepage](https://github.com/stephanie-K/going-green/blob/master/assets/screencast-going-green.chezleskrus.com-2018.09.07-09-46-05.gif "homepage in action")
+
+---
 
 15/01/18: two languages working : FR and EN
 
